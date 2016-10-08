@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>查看班级学生评价进度</title>
+	<link rel="stylesheet" href="__PUBLIC__/Blog/Css/common.css" />
+	<link rel="stylesheet" href="__PUBLIC__/Blog/Css/show.css" />
+	<script type="text/JavaScript" src='__PUBLIC__/Blog/Js/jquery-1.7.2.min.js'></script>
+	<script type="text/JavaScript" src='__PUBLIC__/Blog/Js/common.js'></script>
+</head>
+<body>
+<!--头部-->
+	<div class='top-list-wrap'>
+		<div class='top-list'>
+			<ul class='l-list'>
+				<li><a href="http://www.houdunwang.com" target='_blank'>后盾网</a></li>
+				<li><a href="http://bbs.houdunwang.com" target='_blank'>后盾网论坛</a></li>
+				<li><a href="http://study.houdunwang.com" target='_blank'>后盾学习社区</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='top-search-wrap'>
+		<div class='top-search'>
+			<a href="http://bbs.houdunwang.com" target='_blank' class='logo'>
+				<img src="__PUBLIC__/Blog/Images/logo.png"/>
+			</a>
+		</div>
+	</div>
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<div class='location'>
+				<a href="">首页</a>>
+				<a href="">PHP</a>>
+				<a href="">对象</a>
+			</div>
+            <volist name="student" id="v" key="k">
+			<div class="title">
+				<p>{++$jishu}.{$v['name']}</p>
+				<div>
+					<span class='fl'>情况统计：
+                        <foreach name="project" item="m">
+                            [{$m['name']}:{$m['id']|getStudentProjectStatus=$v['id'],###}]&nbsp;&nbsp;
+                        </foreach>
+                    </span>
+				</div>
+			</div>
+            </volist>
+			<div class='content'>
+				{$show}
+			</div>
+		</div>
+	<!--主体右侧-->
+		<div class='main-right'>
+			<volist name="banji" id="v" key="k">
+            <dl>
+				<dt>初{$k}级部</dt>
+                <foreach name="v" item="m">
+				<dd>
+					<a href="{:U(GROUP_NAME.'/Showclass/index',array('bid'=>$m['id']))}">{$m['ruxuenian']}级{$m['banji']}班</a>
+					<span>(1024)</span>
+				</dd>
+                </foreach>
+			</dl>
+            </volist>
+		</div>
+	</div>
+<!--底部-->
+	<div class='bottom'>
+		<div></div>
+	</div>
+</body>
+</html>

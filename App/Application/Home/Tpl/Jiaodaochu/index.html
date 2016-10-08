@@ -1,0 +1,66 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-success">
+		<div class="am-panel-hd am-cf">教导处平台导航</div>
+		<div class="am-panel-bd am-cf">
+			<ul class="vedio-category-list">
+				<li><a href="{:U(GROUP_NAME.'/Pingyou/pingyou')}">学生评优系统</a></li>
+				<foreach name="renwu" item="v">
+				<li><a href="{:U(GROUP_NAME.'/Enrollment/index',array('id'=>$v['id']))}">{$v['mingcheng']}</a></li>
+				</foreach>
+				<li><a href="{:U(GROUP_NAME.'/Student/index')}">本班学生列表</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">修改密码</div>
+		<div class="am-panel-bd am-cf">
+			<form action="{:U(GROUP_NAME.'/Jiaodaochu/password')}" method="POST" class="am-form am-form-horizontal">
+				<div class="am-form-group">
+					<label for="doc-ipt-pwd-2" class="am-u-sm-2 am-form-label">密码</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="password" name="password"  maxlength="10" id="doc-ipt-pwd-2" placeholder="设置一个新密码">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-pwd-2" class="am-u-sm-2 am-form-label">重复密码</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="password" name="repassword" maxlength="10" id="doc-ipt-pwd-2" placeholder="重复刚才密码">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<div class="am-u-sm-6 am-u-end">
+						<button type="submit" id="btnpassword" class="am-btn am-btn-primary am-center">更新密码</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		$('#btnpassword').click(function(event) {
+			var pattern = /^[a-zA-Z0-9]{6,10}$/;
+			var password = $('input[name=password]');
+			var repassword = $('input[name=repassword]');
+			//检测密码是否为空
+			if(password.val()==''||repassword.val()==''){
+				alert('请输入密码');
+				return false;
+			}
+			if(password.val()!=repassword.val()){
+				alert('两次密码不一致');
+				return false;
+			}
+			password = password.val();
+			var r = password.match(pattern);
+			if(r==null){
+				alert('请输入6-10位的数字字母密码');
+				return false;
+			}
+			
+		});
+	});
+</script>
+<include file="Common:footer" />

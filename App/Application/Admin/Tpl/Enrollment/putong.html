@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报名任务普通类型报表</title>
+	<load file="http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.min.css" />
+</head>
+<body>
+	<div class="am-g am-padding">
+		<div class="am-panel am-panel-default">
+			<div class="am-panel-bd">
+				<a href="__ROOT__/Uploads/{$file}" class="am-btn am-btn am-btn-primary">导出WORD名单</a>
+			</div>
+		</div>
+	</div>
+	<div class="am-g am-padding">
+		<foreach name="jibu" item="v">
+		<!-- 循环级部开始 -->
+			<div class="am-panel am-panel-secondary">
+				<div class="am-panel-hd">
+					<h3 class="am-panel-title">{$v['mingcheng']}</h3>
+				</div>
+				<foreach name="v['xiangmu']" item="m">
+				<!-- 循环项目开始 -->
+					<table class="am-table am-table-bordered am-table-striped am-table-hover">
+						<tr>
+							<th colspan="5" class="am-success"><span class="am-padding-left">{$m['mingcheng']}</span></th>
+						</tr>
+						<tr>
+							<th>序号</th>
+							<th>学号</th>
+							<th>姓名</th>
+							<th>性别</th>
+							<th>备注</th>
+						</tr>
+						<foreach name="m['student']" item="n">
+						<!-- 循环学生开始 -->
+						<tr>
+							<td style="width: 5%">{++$key}</td>
+							<td style="width: 10%">{$n['xuehao']}</td>
+							<td style="width: 5%">
+								<if condition="$n['xingbie'] eq 1">
+									男
+								<else/>
+									女
+								</if>
+							</td>
+							<td style="width: 10%">{$n['name']}</td>
+							<td></td>
+						</tr>
+						<!-- 循环学生结束 -->
+						</foreach>
+					</table>
+				<!-- 循环项目结束 -->
+				</foreach>
+				<div class="am-panel-footer">...</div>
+			</div>
+		<!-- 循环级部结束 -->
+		</foreach>
+	</div>
+</body>
+</html>

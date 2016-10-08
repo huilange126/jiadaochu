@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>班级评优结果</title>
+	<load file="http://cdn.amazeui.org/amazeui/2.5.0/css/amazeui.min.css" />
+</head>
+<body>
+	<div class="am-g am-padding-left am-padding-right">
+		<div class="am-panel am-panel-secondary am-margin-top">
+			<div class="am-panel-hd">{$term['name']}优秀班集体评价结果</div>
+		</div>
+		<foreach name="result" item="v">
+			<table class="am-table am-table-bordered am-table-striped am-table-hover">
+				<thead>
+					<tr>
+					<th colspan="3">{$v['nianjimingcheng']}({$v['ruxuenianfen']})</th>
+					</tr>
+					<tr>
+						<th style="width:10%;">入学年份</th>
+						<th style="width:10%;">班级</th>
+						<th>得分</th>
+					</tr>
+				</thead>
+				<tbody>
+				<foreach name="v['banji']" item="m">
+					<tr>
+						<td>{$m['ruxuenian']}</td>
+						<td>{$m['banji']}</td>
+						<td>{$m['defen']}</td>
+					</tr>
+				</foreach>
+				</tbody>
+			</table>
+		</foreach>
+	</div>
+</body>
+</html>

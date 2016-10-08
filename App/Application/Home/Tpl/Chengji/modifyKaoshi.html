@@ -1,0 +1,80 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-warning">
+		<div class="am-panel-hd am-cf">添加新的考试 <a href="{:U(GROUP_NAME.'/Chengji/index')}" class="am-btn am-btn-success am-margin-left am-btn-xs">返回考试管理</a></div>
+		<div class="am-panel-bd">
+			<form class="am-form am-form-horizontal" action="{:U(GROUP_NAME.'/Chengji/addHandle')}" method="POST">
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试科目</label>
+					<div class="am-u-md-3 am-u-end">
+						<select id="doc-select-1" name="xueke">
+							<option value="0">请选择学科</option>
+							<foreach name="xueke" item="v">
+							<option value="{$v['id']}"<if condition="$v['id'] eq $kaoshi['xueke']">selected="selected"</if>>{$v['xueke']}</option>
+							</foreach>
+						</select>
+						<span class="am-form-caret"></span>
+					</div>
+				</div>
+				<input type="hidden" name="kaoshiId" value="{$kaoshi['id']}">
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试名称</label>
+					<div class="am-u-md-6 am-u-end">
+						<input type="text" name="mingcheng" value="{$kaoshi['mingcheng']}" placeholder="请添加考试名称">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试时间</label>
+					<div class="am-u-md-2 am-u-end">
+						<input type="text" name="shijian" value="{$kaoshi['shijian']|date='Y-m-d',###}" class="am-form-field" placeholder="考试时间" data-am-datepicker readonly required />
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">满分</label>
+					<div class="am-u-md-2 am-u-end">
+						<input type="text" name="manfen" value="{$kaoshi['manfen']}" class="am-form-field" placeholder="满分值" />
+					</div>
+				</div>
+				<div class="am-form-group">
+					<div class="am-u-md-6 am-u-end">
+						<button class="am-btn am-btn-primary am-center" id="btnadd">修改考试</button>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+	<div class="am-modal-dialog">
+		<div class="am-modal-hd">提示信息</div>
+		<div class="am-modal-bd">
+			Hello world！
+		</div>
+		<div class="am-modal-footer">
+			<span class="am-modal-btn">确定</span>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		$('#btnadd').click(function(){
+			if($('select[name=xueke]').val()==0){
+				$('.am-modal-bd').html('<h2 class="am-text-danger">请选择学科</h2>');
+				$('#my-alert').modal();
+				return false;
+			}
+			if($('input[name=mingcheng]').val()==''){
+				$('.am-modal-bd').html('<h2 class="am-text-danger">请添加考试名称</h2>');
+				$('#my-alert').modal();
+				return false;
+			}
+			if($('input[name=shijian]').val()==''){
+				$('.am-modal-bd').html('<h2 class="am-text-danger">请选择考试时间</h2>');
+				$('#my-alert').modal();
+				return false;
+			}
+			
+		});
+	});
+</script>
+<include file="Common:footer" />

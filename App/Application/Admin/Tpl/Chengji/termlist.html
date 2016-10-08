@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author"/>
+    <!-- <css file="__PUBLIC__/Admin/Css/public.css" /> -->
+    <css file="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" />
+    <title>修改学生成绩页面</title>
+</head>
+
+<body>
+    <div class="am-g am-padding">
+        <table  class="am-table am-table-bordered am-table-striped am-table-hover">
+            <thead>
+                <tr class="am-primary">
+                    <th colspan="4">{$student['xuehao']}{$student['name']}成绩列表</th>
+                </tr>
+                <tr>
+                    <td>序号</td>
+                    <td>学期</td>
+                    <td>成绩</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody>
+                <foreach name="termlist" item="v">
+                    <tr>
+                        <td width="5%">{++$key}</td>
+                        <td width="20%">{$v['name']}</td>
+                        <td>
+                            <foreach name="v['chengji']" item="m">
+                                <span class="am-margin-right-xs">{$m['xueke']}{$m['fenshu']}</span>
+                            </foreach>
+                        </td>
+                        <td width="20%">
+                        <a href="{:U(GROUP_NAME.'/Chengji/edit',array('termid'=>$v['id'],'studentid'=>$student['id']))}" class="am-btn am-btn-primary am-btn-xs">修改学生成绩</a>
+                        </td>
+                    </tr>
+                </foreach>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

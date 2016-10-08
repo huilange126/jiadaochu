@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="大眼仔~旭" />
+    <load file="__PUBLIC__/amazeui2.6/css/amazeui.min.css"/>
+    <!-- <css file="__PUBLIC__/Admin/Css/public.css" /> -->
+	<title>项目列表</title>
+</head>
+
+<body>
+<div class="am-g am-padding">
+    <div class="am-panel am-panel-secondary">
+      <div class="am-panel-hd">
+        <h3 class="am-panel-title">评价项目列表</h3>
+    </div>
+    <table class="am-table am-table-bordered am-table-striped">
+        <tr>
+            <td width="5%">序号</td>
+            <td width="10%">学期</td>
+            <td width="10%">名称</td>
+            <td width="10%">参加年级</td>
+            <td>评价内容</td>
+            <td width="15%">操作</td>
+        </tr>
+        <foreach name="project" item="v">
+        <tr>
+            <td>{++$key}</td>
+            <td>{$v['term']}</td>
+            <td>{$v['name']}</td>
+            <td>
+                <foreach name="v['ruxuenian']" item="m">
+                    [<span class="am-text-danger">{$m['ruxuenian']|getNianjiMingcheng=###}</span>]<br>
+                </foreach>
+            </td>
+            <td>
+                <ul class="am-list am-list-static">
+                <foreach name="v['choose']" item="c">
+                    <li>{++$key}.{$c['name']}</li>
+                </foreach>
+                </ul>
+            </td>
+            <td>
+                <a href="{:U(GROUP_NAME.'/Project/option',array('pid'=>$v['id']))}" class="am-btn am-btn-primary">添加选项</a><br>
+                <a href="{:U(GROUP_NAME.'/Project/modify',array('id'=>$v['id']))}" class=" am-margin-top am-btn am-btn-success">修改评价任务</a>
+                <a href="{:U(GROUP_NAME.'/Project/ajaxResult',array('id'=>$v['id']))}" class="am-btn am-btn-warning am-margin-top">生成评价结果</a>
+            </td>
+        </tr>
+        </foreach>
+        <tr><td colspan="6">
+            <ul class="am-pagination am-pagination-left">
+                {$show}
+            </ul>
+        </td></tr>
+    </table>
+</div>
+</div>
+</body>
+</html>

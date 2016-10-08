@@ -1,0 +1,48 @@
+	<include file="Common:header" />
+	<div class="am-g am-g-fixed am-margin-top">
+		<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">教师信息<a href="{:U(GROUP_NAME.'/Banji/logout')}" class="am-btn am-btn-primary am-btn-xs am-fr">退出评价</a></div>
+			<div class="am-panel-bd">
+				姓名：{$teacher['name']}
+			</div>
+		</div>
+	</div>
+	<div class="am-g am-g-fixed am-margin-top">
+		<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd">{$term['name']}任课班级列表<span class=" am-margin-left am-text-danger"><if condition="$status eq true">已经评价<else/>还未评价</if></span></div>
+			<div class="am-panel-bd">
+				<form action="{:U(GROUP_NAME.'/Banji/pingjiaHandle')}" method="POST" class="am-form">
+				<input type="hidden" name="banjicount" value="{$banjicount}">
+				<input type="hidden" name="term" value="{$term['id']}">
+				<input type="hidden" name="teacher" value="{$teacher['id']}">
+				<foreach name="teacher['banji']" item="v">
+					<div class="am-form-group">
+						<label for="doc-ipt-file-1">{$v['ruxuenian']}级{$v['banji']}班</label><br>
+						<foreach name="mingcheng" item="m" key="xxkey">
+							<label class="am-radio-inline">
+							<input type="radio" name="pingjia[{$v['id']}]" value="{$fenzhi[$xxkey]}" <if condition="$v['defen'] eq $fenzhi[$xxkey]">checked='checked'</if>> {$m}
+							</label>
+						</foreach>
+					</div>
+				</foreach>
+				<div class="am-form-group">
+						<button class="am-btn am-btn-primary" id="btn" type="submit">评价班级</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			var banjicount = "{$banjicount}";
+			var jishu = 0;
+			$('#btn').click(function(){
+				var allbanji = $('input[type=radio]:checked');
+				if(allbanji.length!=banjicount){
+					alert('有班级还没有评');
+					return false;
+				}			
+			});
+		});
+	</script>
+	<include file="Common:footer" />

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="大眼仔~旭" />
+
+	<title>无标题 2</title>
+    <style type="text/css">
+        table{
+        width:850px;
+        margin:0px auto;
+        font:Georgia 11px;
+        color:#333333;
+        text-align:center;
+        border-collapse:collapse;
+        }
+        table td{
+        border:1px solid #f00;
+        height:30px;
+        }
+    </style>
+</head>
+
+<body>
+<foreach name="result" item="v">
+    <table>
+        <tr>
+            <td colspan="2">姓名：{$v['teacher']['name']}</td>
+            <td colspan="4">项目:{$project['name']}</td>
+        </tr>
+        <tr>
+            <td width="5%">序号</td>
+            <td width="65%">评价项</td>
+            <td width="8%">优</td>
+            <td width="8%">良</td>
+            <td width="8%">中</td>
+            <td width="8%">差</td>
+        </tr>
+        <foreach name="v['result']" item="m" key="bbb" >
+        <tr>
+            <td width="5%">{$bbb-8}</td>
+            <td width="65%">{$m[0]['option']}</td>
+            <td width="8%">{$m[0]['call']}%</td>
+            <td width="8%">{$m[1]['call']}%</td>
+            <td width="8%">{$m[2]['call']}%</td>
+            <td width="8%">{$m[3]['call']}%</td>
+        </tr>
+        </foreach>
+    </table>
+   分隔符号
+</foreach> 
+</body>
+</html>

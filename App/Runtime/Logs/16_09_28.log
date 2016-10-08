@@ -1,0 +1,514 @@
+[ 2016-09-28T08:45:13+08:00 ] 172.30.2.160 /fuzhong/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001949s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002105s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015519s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001018s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001061s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000848s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004385s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001377s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2016-09-28T08:45:16+08:00 ] 172.30.2.160 /fuzhong/User/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001746s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016394s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000906s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000920s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000695s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003926s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2016-09-28T08:45:30+08:00 ] 172.129.4.104 /fuzhong/User/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016508s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000914s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000912s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000704s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003945s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001485s ]
+
+[ 2016-09-28T08:46:16+08:00 ] 172.129.4.104 /fuzhong/User/Login/loginHandle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001773s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001926s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.004104s ]
+SQL: SELECT * FROM `student` WHERE ( `xuehao` = '201590116' ) AND ( `password` = '654639' ) LIMIT 1   [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014837s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000821s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000783s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000662s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003587s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001297s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-09-28T08:46:18+08:00 ] 172.129.4.104 /fuzhong/User/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.003545s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.003763s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.003784s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.003723s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.003666s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000599s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022294s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000825s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000654s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000626s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003434s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001246s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2016-09-28T08:46:36+08:00 ] 172.129.0.8 /fuzhong/User/Index/detail/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001503s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001657s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.003737s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.003651s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.003692s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.003533s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.003344s ]
+SQL: SELECT `name` FROM `term` WHERE ( 1=1 AND id='8' ) LIMIT 1   [ RunTime:0.000568s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.003649s ]
+SQL: SELECT * FROM `kaoshichengji` WHERE ( xueshengid=16 AND kaoshiid='2' )  [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.003621s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000672s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000668s ]
+NOTIC: [8] Undefined offset: 7 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 8 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 5 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 9 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined variable: echartTitle E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: echartData E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 62 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020943s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000886s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000665s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003538s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001294s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-09-28T08:48:06+08:00 ] 172.30.2.160 /fuzhong/User/Login/loginHandle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002212s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.003658s ]
+SQL: SELECT * FROM `student` WHERE ( `xuehao` = '201590116' ) AND ( `password` = '654639' ) LIMIT 1   [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015285s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001021s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001059s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000769s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004147s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001324s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001436s ]
+
+[ 2016-09-28T08:48:07+08:00 ] 172.30.2.160 /fuzhong/User/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001707s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.003470s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.003821s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.003760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.003931s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.003564s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000466s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023790s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000895s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000910s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003713s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001306s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2016-09-28T08:48:09+08:00 ] 172.30.2.160 /fuzhong/User/Index/detail/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001702s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001847s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.003503s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.003628s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.003714s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.003452s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.003466s ]
+SQL: SELECT `name` FROM `term` WHERE ( 1=1 AND id='8' ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.003673s ]
+SQL: SELECT * FROM `kaoshichengji` WHERE ( xueshengid=16 AND kaoshiid='2' )  [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.003371s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000563s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000551s ]
+NOTIC: [8] Undefined offset: 7 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 8 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 5 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 9 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined variable: echartTitle E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: echartData E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 62 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020845s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000997s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000897s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000680s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003794s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001335s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2016-09-28T12:53:14+08:00 ] 172.30.2.160 /fuzhong/User/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001993s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016805s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.015966s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016522s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016039s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.016636s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026801s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000888s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000820s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000679s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003760s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001347s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2016-09-28T12:53:16+08:00 ] 172.30.2.160 /fuzhong/User/Index/detail/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001481s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016461s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.015715s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016166s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.015679s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.015652s ]
+SQL: SELECT `name` FROM `term` WHERE ( 1=1 AND id='8' ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.015379s ]
+SQL: SELECT * FROM `kaoshichengji` WHERE ( xueshengid=16 AND kaoshiid='1' )  [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.015210s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 1 )  [ RunTime:0.000506s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 1 )  [ RunTime:0.000524s ]
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 7 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 8 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 9 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 10 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined variable: echartTitle E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: echartData E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 62 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024091s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000939s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000733s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000635s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003465s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001133s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2016-09-28T12:58:18+08:00 ] 172.30.2.160 /fuzhong/User/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001768s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016174s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.016399s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016325s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.015475s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027157s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000913s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000890s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003753s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001312s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2016-09-28T12:58:20+08:00 ] 172.30.2.160 /fuzhong/User/Index/detail/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001634s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016006s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.016018s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.015835s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.015705s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.015529s ]
+SQL: SELECT `name` FROM `term` WHERE ( 1=1 AND id='8' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.015428s ]
+SQL: SELECT * FROM `kaoshichengji` WHERE ( xueshengid=16 AND kaoshiid='2' )  [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.015335s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000512s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000574s ]
+NOTIC: [8] Undefined offset: 7 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 8 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 5 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 9 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined variable: echartTitle E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: echartData E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 62 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024649s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000947s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000888s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003740s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001461s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2016-09-28T12:59:00+08:00 ] 172.30.2.160 /fuzhong/User/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001508s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016289s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.016082s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016224s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016695s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.015477s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026550s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000895s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000886s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000673s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003685s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2016-09-28T12:59:02+08:00 ] 172.30.2.160 /fuzhong/User/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001486s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001633s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016404s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.016103s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016158s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.016231s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `banji` = 19 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.015392s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028023s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000915s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000896s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003779s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001316s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2016-09-28T12:59:04+08:00 ] 172.30.2.160 /fuzhong/User/Index/detail/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001480s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.016053s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 16 ) LIMIT 1   [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `banji` [ RunTime:0.015705s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `kaoshi` [ RunTime:0.015703s ]
+SQL: SELECT * FROM `kaoshi` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `xueke` [ RunTime:0.015872s ]
+SQL: SELECT `xueke` FROM `xueke` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.015251s ]
+SQL: SELECT `name` FROM `term` WHERE ( 1=1 AND id='8' ) LIMIT 1   [ RunTime:0.000444s ]
+SQL: SELECT `ruxuenian`,`banji` FROM `banji` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.015299s ]
+SQL: SELECT * FROM `kaoshichengji` WHERE ( xueshengid=16 AND kaoshiid='2' )  [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `kaoshichengji` [ RunTime:0.015390s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000524s ]
+SQL: SELECT `fenshu` FROM `kaoshichengji` WHERE ( `kaoshiid` = 2 )  [ RunTime:0.000493s ]
+NOTIC: [8] Undefined offset: 7 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 8 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 5 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 9 E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 114 行.
+NOTIC: [8] Undefined variable: echartTitle E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: echartData E:\wamp\www\fuzhong\App\Application\User\Action\IndexAction.class.php 第 62 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024830s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000949s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000881s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003709s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001338s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001446s ]
+

@@ -1,0 +1,40 @@
+<include file="Common:header"/>
+<div class="am-g am-padding">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd">管理员列表</div>
+		<table class="am-table am-table-bordered am-table-striped am-table-hover">
+			<thead>
+				<tr>
+					<th style="width: 5%;" class="am-text-center">序号</th>
+					<th style="width: 10%;" class="am-text-center">用户名</th>
+					<th>重置密码</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="admin" item="v">
+				<tr>
+					<td style="width: 5%;" class="am-text-center">{++$num}</td>
+					<td style="width: 5%;" class="am-text-center">{$v['username']}</td>
+					<td>
+						<a href="{:U(GROUP_NAME.'/Admin/edit',array('id'=>$v['id']))}" class="am-btn am-btn-success am-btn-xs">修改账户</a>
+						<a href="{:U(GROUP_NAME.'/Admin/del',array('id'=>$v['id']))}" class="am-btn am-btn-danger am-btn-xs" onclick="return del();">删除账户</a>
+					</td>
+				</tr>
+				</foreach>
+				<tr class="am-active">
+					<td colspan="3">
+						<ul class="am-pagination">
+							{$show}
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<include file="Common:footer"/>
+<script>
+	function del(){
+		return confirm('确定要删除？');
+	}
+</script>

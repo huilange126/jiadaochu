@@ -1,0 +1,24 @@
+[ 2016-05-04T09:53:05+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+ERR: 非法操作:checkusername
+
+[ 2016-05-04T09:53:07+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-05-04T09:53:18+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-05-04T09:53:31+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+ERR: 非法操作:checkpassword
+

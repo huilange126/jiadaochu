@@ -1,0 +1,35 @@
+<include file="Common:header"/>
+<div class="am-g am-padding">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd">管理员修改</div>
+		<div class="am-panel-bd">
+			<form class="am-form am-form-horizontal" method="POST" action="{:U(GROUP_NAME.'/Admin/addHandle')}">
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">账号</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="text" name="username" value="{$admin['username']}" id="doc-ipt-3" placeholder="管理员账号">
+						<input type="hidden" name="id" value="{$admin['id']}">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">密码</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="password" name="password" id="doc-ipt-3" placeholder="请输入密码">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">密码确认</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="password" name="repassword" id="doc-ipt-3" placeholder="请输入密码">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<div class="am-u-sm-6 am-u-end">
+						<button class="am-btn am-btn-primary am-center">修改管理员</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<include file="Common:footer"/>

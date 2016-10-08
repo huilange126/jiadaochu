@@ -1,0 +1,55 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">年级列表</div>
+		<div class="am-panel-bd am-cf">
+			<ul class="vedio-category-list">
+				<foreach name="nianji" item="v">
+				<li>
+					<a href="{:U(GROUP_NAME.'/Pingyou/result',array('njid'=>$v['id']))}">{$v['mingcheng']}</a>
+				</li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="am-g am-g-fixed am-margin-top">
+	<foreach name="banji" item="v">
+		<table class="am-table am-table-bordered am-table-striped am-table-hover">
+			<thead>
+				<tr class="am-primary">
+				<th colspan="6">{$v['ruxuenian']}级{$v['banji']}班</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="sanhaoxiangmu" item="m">
+					<tr>
+						<td colspan="6">
+							{$m['mingcheng']}
+						</td>
+					</tr>
+					<tr><td colspan="6">
+					<?php
+						if($m['zifenlei']!='0'){
+								$zifenlei = json_decode($m['zifenlei']);
+							}
+						foreach($v['result'] as $key=>$resultValue){
+							if($resultValue['sanhaoid']==$m['id']){
+								$str="<span class='am-u-sm-3 am-u-end '>";
+								$str=$str.$resultValue['xuehao'].$resultValue['name'];
+								if($resultValue['zifenleiid']!=0){
+									$str = $str.'('.$zifenlei[$resultValue['zifenleiid']-1].')';
+								}
+								$str=$str."</span>";
+								echo $str;
+							}
+						}
+						
+					?>
+					</td></tr>
+				</foreach>
+			</tbody>
+		</table>
+	</foreach>
+</div>
+<include file="Common:footer" />

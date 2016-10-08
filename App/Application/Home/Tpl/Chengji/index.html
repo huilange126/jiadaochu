@@ -1,0 +1,71 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-warning">
+		<div class="am-panel-hd am-cf">学生成绩管理 <a href="{:U(GROUP_NAME.'/Jiaodaochu/index')}" class="am-btn am-btn-success am-margin-left am-btn-xs">返回班级首页</a></div>
+		<table class="am-table am-table-bordered am-table-striped am-table-hover">
+			<thead>
+			<tr class="am-active">
+					<th colspan="5">历次考试列表
+					[<a href="{:U(GROUP_NAME.'/Chengji/addKaoshi')}">添加考试</a>]
+					[<a href="{:U(GROUP_NAME.'/Student/index')}">学生列表</a>]
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="am-success">
+					<td class="am-text-center" style="width:5%">序号</td>
+					<td class="am-text-center" style="width:10%">科目</td>
+					<td class="am-text-center" style="width:10%">考试时间</td>
+					<td>考试名称</td>
+					<td style="width:25%">操作</td>
+				</tr>
+				<foreach name="kaoshi" item="v">
+				<tr>
+					<td class="am-text-center">{++$num}</td>
+					<td class="am-text-center">{$v['xueke']}</td>
+					<td class="am-text-center">{$v['shijian']|date='Y-m-d',###}</td>
+					<td>{$v['mingcheng']}</td>
+					<td>
+						<ul class="am-nav">
+							<li class="am-dropdown" data-am-dropdown>
+								<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+									操作选项 <span class="am-icon-caret-down"></span>
+								</a>
+								<ul class="am-dropdown-content">
+									<li><a href="{:U(GROUP_NAME.'/Chengji/detail',array('id'=>$v['id']))}">查看成绩</a></li>
+									<li><a href="{:U(GROUP_NAME.'/Chengji/daoru',array('id'=>$v['id']))}">导入成绩</a></li>
+									<li><a href="{:U(GROUP_NAME.'/Chengji/dangechengji',array('id'=>$v['id']))}">添加单个成绩</a></li>
+									<li><a href="{:U(GROUP_NAME.'/Chengji/modifyKaoshi',array('id'=>$v['id']))}">编辑考试</a></li>
+									<li><a href="{:U(GROUP_NAME.'/Chengji/del',array('id'=>$v['id']))}">删除考试</a></li>
+								</ul>
+							</li>
+						</ul>
+					<!-- <a href="{:U(GROUP_NAME.'/Chengji/detail',array('id'=>$v['id']))}" class="am-btn am-btn-success am-btn-xs">查看成绩</a>
+					<a href="{:U(GROUP_NAME.'/Chengji/daoru',array('id'=>$v['id']))}" class="am-btn am-btn-success am-btn-xs">导入成绩</a>
+					<a href="{:U(GROUP_NAME.'/Chengji/dangechengji',array('id'=>$v['id']))}" class="am-btn am-btn-success am-btn-xs">添加单个成绩</a>
+					<a href="{:U(GROUP_NAME.'/Chengji/modifyKaoshi',array('id'=>$v['id']))}" class="am-btn am-btn-primary am-btn-xs">编辑考试</a>
+					<a href="{:U(GROUP_NAME.'/Chengji/del',array('id'=>$v['id']))}" class="am-btn am-btn-danger am-btn-xs" name="del">删除考试</a> -->
+					</td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan="5" class="am-active">
+						<ul class="am-pagination">
+							{$show}
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script>
+	$(function(){
+
+		$('a[name=del]').click(function(event) {
+			return confirm('确定要删除这个考试？');
+		});
+	});
+</script>
+<include file="Common:footer" />

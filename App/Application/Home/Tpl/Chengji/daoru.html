@@ -1,0 +1,72 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-success">
+		<div class="am-panel-hd am-cf">考试成绩导入 <a href="{:U(GROUP_NAME.'/Chengji/index')}" class="am-btn am-btn-success am-margin-left am-btn-xs">返回考试列表</a></div>
+		<div class="am-panel-bd">
+			<form class="am-form am-form-horizontal" action="{:U(GROUP_NAME.'/Chengji/daoruHandle')}" method="POST"  enctype='multipart/form-data'>
+				<input type="hidden" name="kaoshiId" value="{$kaoshi['id']}">
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试科目</label>
+					<div class="am-u-md-3 am-u-end">
+						<input type="text" readonly="" value="{$kaoshi['xueke']}">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试时间</label>
+					<div class="am-u-md-3 am-u-end">
+						<input type="text" readonly="" value="{$kaoshi['shijian']|date='Y-m-d',###}">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">所属班级</label>
+					<div class="am-u-md-3 am-u-end">
+						<input type="text" readonly="" value="{$kaoshi['ruxuenian']}级{$kaoshi['banji']}班">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试名称</label>
+					<div class="am-u-md-6 am-u-end">
+						<input type="text" readonly="" value="{$kaoshi['mingcheng']}">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-file-2"  class="am-u-md-2 am-form-label">选择文件</label>
+					<div  class="am-u-md-4 am-u-end">
+						<input type="file" id="doc-ipt-file-1" name="excel">
+						<p class="am-form-help">请选择要上传的文件...</p>
+					</div>
+				</div>
+				<div class="am-form-group">
+					<div class="am-u-md-6 am-u-end">
+						<button class="am-btn am-btn-primary am-center" id="btnadd">导入成绩</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+	<div class="am-modal-dialog">
+		<div class="am-modal-hd">提示信息</div>
+		<div class="am-modal-bd">
+			Hello world！
+		</div>
+		<div class="am-modal-footer">
+			<span class="am-modal-btn">确定</span>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		$('#btnadd').click(function(){
+
+			if($('input[type=file]').val()==''){
+				$('.am-modal-bd').html('<h2 class="am-text-danger">请选择成绩文件</h2>');
+				$('#my-alert').modal();
+				return false;
+			}
+		});		
+	});
+</script>
+<include file="Common:footer" />

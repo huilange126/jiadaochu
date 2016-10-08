@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="author" content="大眼仔~旭" />
+    <link href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<title>评价结果页面</title>
+    <style>
+        .table-id{
+            width:10%;
+        }
+        .table-content{
+            width:60%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="am-g">
+        <h2 class="am-text-center am-text-warning"></h2>
+        <h3 class="am-text-center am-text-primary">{$project['term']}::{$project['name']}::{$teacher['name']}</h3>
+    <hr />
+</div>
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-12 am-u-md-centered">
+        <table class="am-table am-table-bordered">
+            <tr class="am-success am-text-center">
+                <td class="table-id">序号</td>
+                <td class="table-content">评价内容</td>
+                <td>评价结果</td>
+            </tr>
+            <volist name="option" id="v" key="k">
+            <tr>
+                <td class="am-text-center">{$k}</td>
+                <td>{$v['name']}</td>
+                <td>
+                    <ul class="am-avg-md-1">
+                    <volist name="result[$v['id']]" id="m">
+                        <li>{$m['ctitle']}
+                        <span class="am-badge am-badge-success am-margin-xs">{$m['csum']*100/$m['call']|sprintf='%.2f',###}%
+                        </span>
+                        均值
+                        <span class="am-badge am-badge-warning am-margin-xs">{$m['sumall']*100/$m['allSchool']|sprintf='%.2f',###}%
+                        </span>
+                        </li>
+                    </volist>
+                    </ul>
+                </td>
+            </tr>
+            </volist>
+        </table>
+    </div>
+</div>
+<div class="am-g">
+    <p class="am-text-center">信息技术办公室编制</p>
+</div>
+</body>
+</html>

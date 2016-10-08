@@ -1,0 +1,412 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">基础信息<a href="{:U(GROUP_NAME.'/Login/logout')}" class="am-btn am-btn-primary am-btn-xs am-fr">退出评价</a></div>
+		<div class="am-panel-bd am-cf">
+			<div class="am-u-sm-2">
+				<label for="">班级</label>
+				{$banji['ruxuenian']}级{$banji['banji']}班
+			</div>
+			<div class="am-u-sm-4 am-u-end">
+				<label for="">学期</label>
+				{$term['name']}
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">评优项目<a href="{:U(GROUP_NAME.'/Jiaodaochu/index')}" class="am-btn am-btn-warning am-margin-left am-btn-xs">返回班级首页</a></div>
+		<div class="am-panel-bd am-cf">
+			<ul class="vedio-category-list">
+				<foreach name="xiangmu" item="v">
+				<li><a href="{:U(GROUP_NAME.'/Pingyou/pingyou',array('gzid'=>$v['id']))}">{$v['mingcheng']}</a></li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<if condition="$isxuanding eq 1">
+	<div class="am-panel am-panel-warning">
+		<div class="am-panel-hd">
+		<h3 class="am-panel-title">正在进行[<span class="am-text-primary">{$dangqianguize['mingcheng']}</span>]评选。已经评选了<span class="am-text-primary" id='yijingpingxuan'>{$yipingshuliang}</span>人</h3>
+		</div>
+		<div class="am-panel-bd">
+			<span class="am-text-primary">评优限定条件</span>
+		</div>
+		<ul class="am-list am-list-static">
+			<if condition="$dangqianguize['xuekefenshu'] neq '0'">
+				<li class="am-cf">
+				<div class="am-text-left">
+				<span  class='am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>成绩最低要求</span>
+					<php>
+						$fenshu = json_decode($dangqianguize['xuekefenshu']);
+						foreach($fenshu as $value){
+							$xuekeName = getXuekeName($value->xuekeid);
+							echo "<span class='am-badge am-badge-warning am-fl  am-radius am-text-sm am-margin-right'>".$xuekeName.$value->chengjiyaoqiu."分</span>";
+						}
+					</php>
+				</div>
+				</li>
+			</if>
+			<if condition="$dangqianguize['renshu'] neq '0'" >
+				<li class="am-cf">
+					<div>
+						<span  class='am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>人数限制</span>
+						<span  class='am-badge am-badge-warning am-fl  am-radius am-text-sm am-margin-right'>{$dangqianguize['renshu']}</span>
+					</div>
+				</li>
+			</if>
+			<if condition="$dangqianguize['bili'] neq '0'">
+				<li class="am-cf">
+					<div>
+						<span  class='am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>人数限制</span>
+						<span  class='am-badge am-badge-warning am-fl  am-radius am-text-sm am-margin-right'>
+						评选比例为{$dangqianguize['bili']}%，本班有学生{$xueshengshu}名，可以评选共计
+						<php>
+							echo ceil(($dangqianguize[bili]*$xueshengshu)/100);
+						</php>
+						名
+						</span>
+					</div>
+				</li>
+			</if>
+			<if condition="$dangqianguize['jicheng'] neq '0'">
+				<li class="am-cf">
+				<div>
+					<span  class='am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>必须从</span>
+					<span  class='am-badge am-badge-warning am-fl  am-radius am-text-sm am-margin-right'>【{$dangqianguize['jicheng']|getXiangmuName=###}】结果中评选</span>
+				</div>
+				</li>
+			</if>
+			<if condition="$dangqianguize['paichu'] neq '0'">
+				<li class="am-cf">
+				<div>
+					<span  class='am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>排除已经评选</span>
+					<span  class='am-badge am-badge-warning am-fl  am-radius am-text-sm am-margin-right'>
+					<?php
+						$paichuidlist = explode(',',$dangqianguize['paichu']);
+						foreach($paichuidlist as $paichuidlistValue){
+							$paichuidlistMessage = "【".getXiangmuName($paichuidlistValue).'】';
+							echo $paichuidlistMessage;
+						}
+					?>
+					</span>
+				</div>
+				</li>
+			</if>
+		</ul>
+		<div class="am-panel-footer"><span class="am-text-xs am-text-danger">(请注意限定条件)</span></div>
+	</div>
+	</if>
+	<table class="am-table am-table-bordered am-table-striped am-table-hover">
+		<thead>
+		<tr>
+			<th colspan="6">学生成绩</th>
+		</tr>
+			<tr>
+				<th style="width:5%;" class="am-text-center">学号</th>
+				<th style="width:8%;" class="am-text-center">姓名</th>
+				<th>成绩(蓝色表示成绩合格要求，红色表明未达到要求,绿色表示无成绩)</th>
+				<th style="width:20%;">条件状况</th>
+				<th style="width:13%;">子分类</th>
+				<th style="width:10%;" class="am-text-center">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach name="student" item="v">
+			<php>
+			//初始化每个学生的满足条件
+			$arrtiaojian='';
+			$chengjibugou = false;
+			</php>
+				<tr>
+				<td class="am-text-center">{$v['xuehao']}</td>
+					<td class="am-text-center"><span id="{$v['id']}" onclick="pophistory(this);">{$v['name']}</span></td>
+					<td>
+						<?php
+						//不等于0，表示该项评优对成绩有要求
+						$xueshengid = $v['id'];
+						$termid = $term['id'];
+						if($dangqianguize['xuekefenshu']!='0'){
+
+							$fenshuyaoqiu = json_decode($dangqianguize['xuekefenshu']);
+							//遍历学科要求
+							
+							foreach($fenshuyaoqiu as $key=>$yaoqiuvalue){
+								$xuekeid = (int)$yaoqiuvalue->xuekeid;
+								$fenshuyaoqiu = (int)$yaoqiuvalue->chengjiyaoqiu;
+								//echo $fenshuyaoqiu;
+								$str = '';
+								$xuekechengji = M('chengji')->where(array('xueshengid'=>$xueshengid,'termid'=>$termid,'xuekeid'=>$xuekeid))->find();
+								//p($xuekechengji);
+								//如果取得成绩为空，表示当前成绩还没有导入
+								if(empty($xuekechengji)){
+									$str = "<span  class='am-margin-vertical-xs am-badge am-badge-success am-fl  am-radius am-text-sm am-margin-right'>";
+									$str = $str.getXuekeName($xuekeid).'(无)';
+									$str = $str."</span>";
+									//触发成绩不够条件标志
+									$chengjibugou = true;
+								}else{
+									if($xuekechengji['fenshu']<$fenshuyaoqiu){
+										$str = "<span  class='am-margin-vertical-xs am-badge am-badge-danger am-fl  am-radius am-text-sm am-margin-right'>";
+										$str = $str.getXuekeName($xuekeid).'('.$xuekechengji['fenshu'].')';
+										$str = $str."</span>";
+										//触发不够条件标志
+										$chengjibugou = true;
+									}else{
+										$str = "<span  class='am-margin-vertical-xs am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>";
+										$str = $str.getXuekeName($xuekeid).'('.$xuekechengji['fenshu'].')';
+										$str = $str."</span>";
+									}
+								}
+								echo $str;
+							}
+						}else{
+							//无要求则直接显示成绩
+							if(empty($v['chengji'])){
+								$str = "<span  class='am-margin-vertical-xs am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>";
+								$str = $str.'没有成绩';
+								$str = $str."</span>";
+								echo $str;
+							}else{
+								foreach($v['chengji'] as $value){
+									$str = "<span  class='am-margin-vertical-xs am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>";
+									$str = $str.getXuekeName($value['xuekeid']).'('.$value['fenshu'].')';
+									$str = $str."</span>";
+									echo $str;
+								}
+							}
+							
+						}
+						if($isxuanding==0){
+							//已进入页面直接显示分数
+							//无要求则直接显示成绩
+							if(empty($v['chengji'])){
+								$str = "<span  class='am-margin-vertical-xs am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>";
+								$str = $str.'没有成绩';
+								$str = $str."</span>";
+								echo $str;
+							}else{
+								foreach($v['chengji'] as $value){
+									$str = "<span  class='am-margin-vertical-xs am-badge am-badge-primary am-fl  am-radius am-text-sm am-margin-right'>";
+									$str = $str.getXuekeName($value['xuekeid']).'('.$value['fenshu'].')';
+									$str = $str."</span>";
+									echo $str;
+								}
+							}
+						}
+						?>
+					</td>
+					<td>
+						<!-- 成绩要求在显示成绩的时候已经要求 -->
+						<?php
+							if($chengjibugou==true){
+								$arrtiaojian[] = array(
+									'message'=>'成绩条件不够',
+									'bumanzu'=>true,		
+									);
+							}
+						?>
+						<!-- 还有继承要求 -->
+						<!-- 还有排除要求 -->
+						<?php
+						//表示要求从某个评优项目名单继承过来
+						if($dangqianguize['jicheng']!=0){
+							$condition = array(
+								'termid'=>$termid,
+								'xueshengid'=>$xueshengid,
+								'sanhaoid'=>$dangqianguize['jicheng'],
+								);
+							$jichengXiangmuName = getXiangmuName($dangqianguize['jicheng']);
+							if(M('sanhaojieguo')->where($condition)->find()){
+							}else{
+								$arrtiaojian[] = array(
+									'message'=>'未参评'.$jichengXiangmuName,
+									'bumanzu'=>true,		
+									);
+							}
+						}
+						//表示要求排除某个评优项目名单
+						if($dangqianguize['paichu']!='0'){
+							//要排除项目id数组
+							$paichu = explode(',',$dangqianguize['paichu']);
+
+							foreach($paichu as $paichuValue){
+								$condition = array(
+									'termid'=>$termid,
+									'xueshengid'=>$xueshengid,
+									'sanhaoid'=>$paichuValue,
+									);
+								$paichuXiangmuName = getXiangmuName($paichuValue);
+								if(M('sanhaojieguo')->where($condition)->find()){
+									//触发继承不够条件标识
+									$arrtiaojian[] = array(
+									'message'=>'已参评'.$paichuXiangmuName,
+									'bumanzu'=>true,		
+									);
+								}else{
+									
+								}
+							}
+							
+						}
+						$tiaojianMessage = '';
+						$manzutiaojian = false;
+						foreach($arrtiaojian as $tiaojianValue){
+							$tiaojianMessage = "<span class='am-badge am-badge-warning am-text-sm'>".$tiaojianValue['message']."</span>";
+							$manzutiaojian = $manzutiaojian||$tiaojianValue['bumanzu'];
+							echo $tiaojianMessage.'<br>';
+						}
+						?>
+					</td>
+					<td>
+					<?php
+					//获取该学生评优情况
+					$pingyouqingkuang = getXueshengStatus($v["id"],$term["id"],$dangqianguize["id"]);
+					//p($pingyouqingkuang);
+					?>
+						<form action="" class="am-form">
+							<div class="am-form-group">
+								<select id="doc-select-1" class="am-margin-top-sm">
+									<?php
+										//显示子分类
+										if($dangqianguize['zifenlei']!='0'){
+											echo "<option value='0'>请选子分类</option>";
+											$zifenlei = json_decode($dangqianguize['zifenlei']);
+											
+											//p($zifenlei);
+											foreach($zifenlei as $zifenleiKey=>$zifenleiValue){
+												//清除已经选定子分类
+												$selected = '';
+												if($pingyouqingkuang['status']==1){
+													if($pingyouqingkuang['jieguo']['zifenleiid']==($zifenleiKey+1)){
+														$selected = "selected='selected'";
+													}
+												}
+												
+												$zifenleistr = "<option ".$selected." value='".($zifenleiKey+1)."'>";
+												$zifenleistr = $zifenleistr.$zifenleiValue;
+												$zifenleistr = $zifenleistr."</option>";
+												echo $zifenleistr;
+											}
+										}else{
+											echo "<option value='0'>无子分类</option>";
+										}
+									?>
+								</select>
+								<span class="am-form-caret"></span>
+							</div>
+						</form>
+					</td>
+					<td>
+					 	<if condition='$manzutiaojian neq true'>
+					 		<if condition='$pingyouqingkuang["status"] eq 0'>
+					 			<span attr="{$v['id']},{$dangqianguize['id']},{$term['id']}" class="am-margin-top am-btn am-btn-success am-btn-xs am-btn-block" biaoshi='0' onclick="pingxuan(this);">加入评选</span>
+					 		<else/>
+					 			<span attr="{$v['id']},{$dangqianguize['id']},{$term['id']}" class="am-margin-top am-btn am-btn-danger am-btn-xs am-btn-block" biaoshi='1' onclick="pingxuan(this);">取消评选</span>
+					 		</if>
+					 	</if>
+					</td>
+				</tr>
+			</foreach>
+		</tbody>
+	</table>
+</div>
+<script>
+	// POP弹出学生历史评优内容
+	function pophistory(obj){
+		var studentId = $(obj).attr('id');
+
+		$.ajax({
+			type: 'POST',
+			url: "{:U(GROUP_NAME.'/Pingyou/ajaxPastResult')}",
+			data: {studentid:studentId},
+			success: function(data){
+				var pastResult = '';
+				if(data==null){
+					pastResult = '无评选记录';
+				}else{
+					$.each(data,function(index,value){
+						if(pastResult==''){
+							pastResult = value.xueqi+'：：'+value.jiangxiang;
+						}else{
+							pastResult = pastResult+'<br>'+value.xueqi+'：：'+value.jiangxiang;
+						}
+					});
+				}
+				
+				$(obj).popover({
+					content: pastResult,
+					theme:'secondary',
+				})
+			},
+			dataType: 'json'
+		});
+		
+	}
+	// 评选函数
+	function pingxuan(element){
+		var url = "{:U(GROUP_NAME.'/Pingyou/pingyouHandle')}";
+		var pingxuanshuju = $(element).attr('attr');
+		var biaoshi = $(element).attr('biaoshi');
+		var xueshengshu = "{$xueshengshu}";
+		var banji = "{$banji['id']}";
+
+		var hasZifenlei = {$hasZifenlei};
+		//判定是否选定了评价项目
+		var isxuanding = {$isxuanding};
+		if(isxuanding==0){
+			alert('请先选定评优项目');
+			return false;
+		}
+		//判定如果有子分类，是否选择了子分类
+		var zifenlei = 0;
+		if(hasZifenlei==1){
+			if($(element).parents("tr").find("select").val()=='0'){
+				alert('请选择子分类');
+				return false;
+			}else{
+				zifenlei = $(element).parents("tr").find("select").val();
+			}
+		}
+		$.ajax({
+			type:'POST',
+			url:url,
+			data: {shuju:pingxuanshuju,biaoshi:biaoshi,xueshengshu:xueshengshu,banji:banji,zifenlei:zifenlei},
+			success:function(data){
+				if(data==0){
+					alert('插入数据出错');
+				}
+				if(data==1){
+					var biaoshi = $(element).attr('biaoshi');
+					//表示是添加成功，修改状态
+					$(element).attr('biaoshi',1);
+					$(element).html('取消评优');
+					$(element).removeClass("am-btn-success");
+					$(element).addClass("am-btn-danger");
+					//更改已经评选人数
+					$now = parseInt($('#yijingpingxuan').html());
+
+					$('#yijingpingxuan').html($now+1);
+				}
+				if(data==2){
+					alert('人数超出限制');
+				}
+				if(data==3){
+					//表示是取消成功，修改状态
+					$(element).attr('biaoshi',0);
+					$(element).html('加入评优');
+					$(element).removeClass("am-btn-danger");
+					$(element).addClass("am-btn-success");
+					//更改已经评选人数
+					$now = parseInt($('#yijingpingxuan').html());
+
+					$('#yijingpingxuan').html($now-1);
+				}
+				
+			},
+			dataType:'json',
+		});
+	}
+</script>
+<include file="Common:footer" />

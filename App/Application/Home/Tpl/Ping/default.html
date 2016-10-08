@@ -1,0 +1,113 @@
+    <include file="Common:header"/>
+    <style>
+    .radio-choose label{
+        font-weight: normal;
+        font-size:16px;
+    }
+    </style>
+    <script type="text/javascript">
+        // var count = <?php echo count($project['choose']) ?>;
+        var count = {$project['choose']|count=###};
+        var checklist = new Array(count);//用于检测那个题目被选过了
+        $(document).ready(function(){
+            
+        });
+        
+        function mycheck(span,shunxu){
+            checklist[shunxu-1] = $('#'+span).html();
+        }
+        
+        function btnclick(){
+            if($('#nowteacher').val()==''){
+                alert('请先选择教师');
+                return false;
+            }
+            var nochecklist = '还有';
+            var nochecknums = 0;
+            for(i=0;i<count;i++){
+                if(checklist[i]==null){
+                    nochecklist=nochecklist+'第'+String(i+1)+'个评价、';
+                    nochecknums++;
+                }
+            }
+            nochecklist=nochecklist+'没有选';
+            if(nochecknums==0){
+                
+            }else{
+                alert(nochecklist);
+                return false;
+            }
+            
+        }
+    </script>
+    <!--基础信息-->
+    <div class="am-g am-g-fixed am-margin-top">
+        <div class="am-panel am-panel-secondary">
+            <div class="am-panel-hd">
+                基本信息
+                <a href="{:U(GROUP_NAME.'/Ping/logout')}" class="am-btn am-btn-warning am-btn-xs am-fr">退出评价系统</a>
+            </div>
+            <div class="am-panel-bd">
+                学期：{$project['term']}，进行中项目：{$project['name']}，姓名：{$student['name']}
+            </div>
+        </div>
+    </div>
+    <!-- 基础信息结束 -->
+    <!-- 主体信息开始 -->
+    <div class="am-g am-g-fixed am-margin-top">
+        <!-- 评价项目列表开始 -->
+        <div class="am-u-sm-8" style="padding:0px;">
+            <div class="am-panel am-panel-secondary" style="margin: 0px;">
+                <div class="am-panel-hd">
+                评价内容
+                <span class="am-fr">正在评价老师：
+                <span id="teacher" style="color: red;">{$nowTeacher['name']}</span>
+                </span>
+                </div>
+                <div class="am-panel-bd">
+                <form method="POST" action="{:U(GROUP_NAME.'/Ping/addPing')}" class="am-form">
+                {~$i=1}
+                <foreach name="project['choose']" item="v">
+                <input type="hidden" name="nowteacher" id="nowteacher" value="{$nowTeacher['id']}" />
+                <input type="hidden" name="term" value="{$term['id']}" />
+                <input type="hidden" name="nowproject" value="{$project['id']}" />
+                <input type="hidden" name="nowstudent" value="{$student['id']}" />
+                    <div class="am-form-group">
+                        <label for="doc-ipt-email-1"><span id="choose{$i}">{$i}：</span>{$v['name']}</label>
+                        <div class="radio-choose">
+                        <label class="am-margin-left"><input type="radio" onclick="mycheck('choose{$i}',{$key+1})" name="ping[{$v['id']}]" value="1" />&nbsp;&nbsp;{$v['c1']}</label>
+                            <label class="am-margin-left"><input type="radio" onclick="mycheck('choose{$i}',{$key+1})" name="ping[{$v['id']}]" value="2" />&nbsp;&nbsp;{$v['c2']}</label>
+                            <label class="am-margin-left"><input type="radio" onclick="mycheck('choose{$i}',{$key+1})" name="ping[{$v['id']}]" value="3" />&nbsp;&nbsp;{$v['c3']}</label>
+                            <label class="am-margin-left"><input type="radio" onclick="mycheck('choose{$i}',{$key+1})" name="ping[{$v['id']}]" value="4" />&nbsp;&nbsp;{$v['c4']}</label>
+                        </div>
+                    </div>
+                    {~$i++}
+                </foreach>
+                <button class="am-btn am-btn-primary am-btn-block"  onclick="javascript:return btnclick();">提交评价</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        <!-- 评价项目列表结束 -->
+        <!-- 左侧教师列表开始 -->
+        <div class="am-u-sm-4" style="padding-right:0px;">
+            <div class="am-panel am-panel-secondary">
+                <div class="am-panel-hd">教师列表</div>
+                <ul class="am-list">
+                <foreach name="teacher" item="v">
+                    <li>
+                        <if condition="checkTeacherStatus($project['id'],$student['id'],$v['id']) eq 1"> 
+                            <a href="#" class="am-btn am-btn-warning am-disabled am-text-left">{$v['xueke']}&nbsp;&nbsp;{$v['name']}&nbsp;&nbsp;已经评价</a>
+                            <else />
+                            <a href="{:U(GROUP_NAME.'/Ping/index',array('pid'=>$project['id'],'sid'=>$student['id'],'tid'=>$v['id']))}"  class="am-btn am-btn-primary am-text-left">{$v['xueke']}&nbsp;&nbsp;{$v['name']}</a>
+                        </if>
+                    </li>
+                </foreach>
+                </ul>
+            </div>
+        </div>
+        <!-- 左侧教师列表结束 -->
+    </div>
+    <!-- 主体信息结束 -->
+<!--底部-->
+<include file="Common:footer"/>

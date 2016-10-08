@@ -1,0 +1,96 @@
+[ 2016-03-23T08:48:48+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+ERR: 非法操作:checkusername
+
+[ 2016-03-23T08:50:54+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+ERR: 非法操作:checkusername
+
+[ 2016-03-23T08:50:55+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-03-23T09:08:41+08:00 ] 172.30.2.168 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-03-23T10:35:34+08:00 ] 172.30.2.168 /ping/Admin/Sanhao/del/id/1.html
+ERR: 非法操作:del
+
+[ 2016-03-23T10:57:22+08:00 ] 172.30.2.168 /ping/Admin/Sanhao/toWord/nianji/1.html
+ERR: 非法操作:toWord
+
+[ 2016-03-23T14:26:57+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+ERR: 非法操作:checkusername
+
+[ 2016-03-23T14:26:58+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-03-23T14:28:31+08:00 ] 172.30.2.168 /ping/Admin/Sanhao/toWord/nianji/1.html
+ERR: 非法操作:toWord
+
+[ 2016-03-23T15:36:34+08:00 ] 172.30.2.151 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002165s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002393s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 1214 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002169s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002390s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000718s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 1214 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001847s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002744s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 55 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002364s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 1214 ) LIMIT 1   [ RunTime:0.000696s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 55 ) AND ( `tid` = 6 )  [ RunTime:0.002027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('333','331','340','332','335','341','329','344','337','328','304','317','309','305','314','315','311','301','310','300','318','302','320','347','307','325','330') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.001028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('333','331','340','332','335','341','329','344','337','328','304','317','309','305','314','315','311','301','310','300','318','302','320','347','307','325','330') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.001017s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,55,1214,6) [ RunTime:0.031618s ]
+
+[ 2016-03-23T16:14:29+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+ERR: 非法操作:checkusername
+
+[ 2016-03-23T16:14:31+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-03-23T16:14:42+08:00 ] 172.30.2.168 /ping/Admin/Sanhao/toWord/nianji/1.html
+ERR: 非法操作:toWord
+
+[ 2016-03-23T17:04:06+08:00 ] 172.30.2.168 /ping/Admin/Enrollment/banjiDetail/id/10.html
+ERR: xxxx.zip下载文件不存在！
+
+[ 2016-03-23T17:05:42+08:00 ] 172.30.2.168 /ping/Admin/Enrollment/banjiDetail/id/10.html
+ERR: /ping/Uploads/xxxx.zip下载文件不存在！
+
+[ 2016-03-23T17:09:31+08:00 ] 172.30.2.168 /ping/Admin/Enrollment/banjiDetail/id/10.html
+ERR: ./Uploads/xxxx.zip下载文件不存在！
+
+[ 2016-03-23T17:12:37+08:00 ] 172.30.2.168 /ping/Admin/Enrollment/banjiDetail/id/10.html
+ERR: ./Uploads/xxxx.zip下载文件不存在！
+
+[ 2016-03-23T17:13:13+08:00 ] 172.30.2.168 /ping/Admin/Enrollment/banjiDetail/id/10.html
+ERR: ./Uploads/xxxx.zip下载文件不存在！
+
+[ 2016-03-23T17:15:45+08:00 ] 172.30.2.168 /ping/Admin/Enrollment/banjiDetail/id/10.html
+ERR: ./Uploads/xxxx.zip下载文件不存在！
+

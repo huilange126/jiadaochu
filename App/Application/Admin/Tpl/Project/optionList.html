@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>评优选项列表</title>
+	<load file="http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.min.css"/>
+</head>
+<body>
+	<div class="am-g am-padding">
+		<div class="am-panel am-panel-secondary">
+			<div class="am-panel-hd">
+			<h3 class="am-panel-title">评价选项列表</h3>
+			</div>
+			<table class="am-table am-table-bordered am-table-striped">
+				<tr>
+					<td>序号</td>
+					<td>内容</td>
+					<td>选项1</td>
+					<td>选项1</td>
+					<td>选项1</td>
+					<td>选项1</td>
+					<td>操作</td>
+				</tr>
+				<foreach name="option" item="v">
+				<tr>
+					<td>{++$key}</td>
+					<td>{$v['name']}</td>
+					<td>{$v['c1']}</td>
+					<td>{$v['c2']}</td>
+					<td>{$v['c3']}</td>
+					<td>{$v['c4']}</td>
+					<td></td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan="7">
+						<ul class="am-pagination am-pagination-left">
+							{$show}
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

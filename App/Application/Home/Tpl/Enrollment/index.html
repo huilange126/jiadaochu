@@ -1,0 +1,86 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-bd">
+		[{$enrollment['mingcheng']}]相关说明：每人限报{$enrollment['renshu']}个项目。开始时间{$enrollment['start']|date='Y-m-d',###}；截止时间{$enrollment['end']|date='Y-m-d',###}。
+		</div>
+	</div>
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">
+		[{$enrollment['mingcheng']}]项目列表
+		<a href="{:U(GROUP_NAME.'/Enrollment/bmlist',array('eid'=>$enrollment['id'],'type'=>1))}" class="am-btn am-btn-success am-btn-xs " target="_blank">查看报名情况</a>
+		<a href="{:U(GROUP_NAME.'/Jiaodaochu/index')}" class="am-btn am-btn-warning am-btn-xs">返回班级首页</a>
+		</div>
+		<div class="am-panel-bd am-cf">
+			<ul class="vedio-category-list">
+				<foreach name="content" item="v">
+				<li><a href="{:U(GROUP_NAME.'/Enrollment/index',array('id'=>$enrollment['id'],'nid'=>$v['id']))}">{$v['mingcheng']}</a></li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">
+		<if condition="empty($nowContent)">
+			请选择报名项目
+		<else/>
+			正在进行：<span class="am-text-danger">{$nowContent|getContent=###}</span>
+		</if>
+		</div>
+		<div class="am-panel-bd am-cf">
+			<form action="" method="POST" class="am-form">
+				<div class="am-g">
+					<div class="am-u-sm-5">
+						<div class="am-form-group">
+						<label for="doc-select-2">班级学生列表</label>
+							<select multiple size="20" name="student" class="" id="doc-select-2">
+								<foreach name="student" item="v">
+								<option value="{$v['id']}">&nbsp;{$v['xuehao']}&nbsp;&nbsp;<if condition="$v['xingbie'] eq 1">男<else/>女</if>&nbsp;&nbsp;{$v['name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="am-u-sm-2">
+						<div class="am-form-group am-text-center">
+							<label for="">操作</label>
+							<button type="button" id="btnadd" class="am-btn am-btn-primary am-margin-top">添加>>>></button>
+							<button type="button" id="btnremove" class="am-btn am-btn-warning am-margin-top"><<<<移除</button>
+							<label for="" class="am-margin-top">提示：双击学生名也可以进行操作</label>
+						</div>
+					</div>
+					<div class="am-u-sm-5">
+						<div class="am-form-group">
+						<label for="doc-select-2">已报学生列表</label>
+							<select multiple name="addlist" size="20" class="" id="doc-select-2">
+							<foreach name="enrollStudent" item="v">
+								<option value="{$v['id']}">&nbsp;{$v['xuehao']}&nbsp;&nbsp;<if condition="$v['xingbie'] eq 1">男<else/>女</if>&nbsp;&nbsp;{$v['name']}</option>
+							</foreach>
+							</select>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script>
+		var enrollment = "{$enrollment['id']}";
+		var content = "{$nowContent['id']}";
+		var banji = "{$banji['id']}";
+
+		var url = "{:U(GROUP_NAME.'/Enrollment/ajaxAdd')}";
+		// var enrollment = "{$nowContent['id']}";
+</script>
+<load file="__PUBLIC__/Js/enrollment.js" />
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog" style="width: 500px;">
+    <div class="am-modal-hd" style="background-color: #F37B1D;border-bottom: solid 1px #efefef;">提示信息</div>
+    <div class="am-modal-bd am-text-left" style="padding-top: 30px;padding-bottom: 30px;">
+      Hello world！
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
+    </div>
+  </div>
+</div>
+<include file="Common:footer" />

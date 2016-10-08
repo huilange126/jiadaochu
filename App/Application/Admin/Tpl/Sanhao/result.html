@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>评优结果页面</title>
+	<load file="http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.min.css" />
+</head>
+<body>
+	<div class="am-g am-padding">
+		<div class="am-panel am-panel-warning">
+			<div class="am-panel-hd">评价结果</div>
+		</div>
+		<foreach name="result" item="v">
+		<div class="am-panel am-panel-secondary">
+			<div class="am-panel-hd">{$v['banji']['ruxuenian']}级{$v['banji']['banji']}班</div>
+			<foreach name="v['student']" item="m">
+				<div class="am-panel-hd">{$m['mingcheng']}</div>
+				<div class="am-panel-bd am-cf">
+					<foreach name="m['student']" item="n">
+						<span class='am-u-sm-2 am-u-end '>
+						{$n['name']}
+						<if condition="$n['zifenleiid'] neq 0">
+						({$m['zifenlei'][$n['zifenleiid']-1]})
+						</if>
+						</span>
+					</foreach>
+				</div>
+			</foreach>
+		</div>
+		</foreach>
+	</div>
+</body>
+</html>

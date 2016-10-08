@@ -1,0 +1,58 @@
+<include file="Home@Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">学生基础信息<a href="{:U(GROUP_NAME.'/Login/logout')}" class="am-btn am-btn-primary am-btn-xs am-fr ">退出系统</a></div>
+		<div class="am-panel-bd am-cf">
+			<div class="am-u-md-2 am-u-sm-12">
+				<label for="">学号</label>
+				{$student['xuehao']}
+			</div>
+			<div class="am-u-md-2 am-u-sm-12">
+				<label for="">姓名</label>
+				{$student['name']}
+			</div>
+			<div class="am-u-md-4 am-u-sm-12 am-u-end">
+				<label for="">班级</label>
+				{$student['ruxuenian']}级{$student['banji']}班
+			</div>
+		</div>	
+	</div>	
+</div>
+<div class="am-g am-g-fixed">
+	<!-- 左侧导航栏开始 -->
+	<include file="right"/>
+	<!-- 左侧导航栏结束 -->
+	<!-- 右侧主面板开始 -->
+	<div class="am-u-md-9 am-u-sm-12">
+		<div class="am-g">
+			<div class="am-panel am-panel-secondary">
+				<div class="am-panel-hd">考试成绩列表</div>
+				<ul class="am-list am-text-truncate">
+					<foreach name="kaoshi" item="v">
+						<li><a href="{:U(GROUP_NAME.'/Index/detail',array('id'=>$v['id']))}">{++$num}.<span class="am-margin-xs">[{$v['xueke']}]</span>{$v['mingcheng']}({$v['shijian']|date='Y-m-d',###})</a></li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="am-u-md-12 am-show-md-up">
+				<ul class="am-pagination">
+					{$show}
+				</ul>
+			</div>
+			<div class="am-u-sm-12 am-show-sm-only">
+				<ul class="am-pagination am-cf">
+					<if condition="$nowpage neq 1">
+						<li class="am-pagination-prev"><a href="{:U(GROUP_NAME.'/Index/index',array('p'=>$nowpage-1))}">上一页</a></li>
+					</if>
+					<li class="am-center"><a href="#">{$nowpage}/{$count}</a></li>
+					<if condition="$nowpage lt $count">
+					<li class="am-pagination-next"><a href="{:U(GROUP_NAME.'/Index/index',array('p'=>$nowpage+1))}">下一页</a></li>
+					</if>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- 右侧主面板结束 -->
+</div>
+<include file="Home@Common:footer" />

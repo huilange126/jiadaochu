@@ -1,0 +1,2016 @@
+[ 2016-03-28T08:07:17+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+ERR: 非法操作:checkusername
+
+[ 2016-03-28T08:07:21+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-03-28T11:30:01+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002419s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002358s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) [ RunTime:0.059854s ]
+
+[ 2016-03-28T11:30:03+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002085s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002344s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) [ RunTime:0.033842s ]
+
+[ 2016-03-28T11:30:04+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002066s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002254s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) [ RunTime:0.052486s ]
+
+[ 2016-03-28T11:30:05+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001970s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002216s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 58 ) AND ( `tid` = 6 ) [ RunTime:0.061757s ]
+
+[ 2016-03-28T11:30:06+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002194s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002349s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 60 ) AND ( `tid` = 6 ) [ RunTime:0.064372s ]
+
+[ 2016-03-28T11:30:07+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002117s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002393s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 73 ) AND ( `tid` = 6 ) [ RunTime:0.060209s ]
+
+[ 2016-03-28T11:30:08+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001983s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002247s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 69 ) AND ( `tid` = 6 ) [ RunTime:0.057905s ]
+
+[ 2016-03-28T11:30:09+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001984s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002275s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 76 ) AND ( `tid` = 6 ) [ RunTime:0.046064s ]
+
+[ 2016-03-28T11:30:14+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002142s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002341s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 77 ) AND ( `tid` = 6 ) [ RunTime:0.049084s ]
+
+[ 2016-03-28T11:30:16+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002179s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002400s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 78 ) AND ( `tid` = 6 ) [ RunTime:0.003337s ]
+
+[ 2016-03-28T11:30:20+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001941s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002345s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 80 ) AND ( `tid` = 6 ) [ RunTime:0.046681s ]
+
+[ 2016-03-28T11:30:21+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002096s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002302s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 78 ) AND ( `tid` = 6 ) [ RunTime:0.003349s ]
+
+[ 2016-03-28T11:30:25+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002154s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002405s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) [ RunTime:0.003381s ]
+
+[ 2016-03-28T11:30:28+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002061s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002442s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 88 ) AND ( `tid` = 6 ) [ RunTime:0.003355s ]
+
+[ 2016-03-28T11:30:30+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002178s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002366s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) [ RunTime:0.003449s ]
+
+[ 2016-03-28T11:30:33+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001959s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002218s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 98 ) AND ( `tid` = 6 ) [ RunTime:0.003296s ]
+
+[ 2016-03-28T11:30:46+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002181s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002362s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002202s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002384s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002754s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000779s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001956s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002385s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000684s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001975s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000588s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000520s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,51,6) [ RunTime:0.042498s ]
+
+[ 2016-03-28T11:30:47+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002115s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002383s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002172s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002353s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002046s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002709s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000752s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001950s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002372s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001981s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000651s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,52,6) [ RunTime:0.054893s ]
+
+[ 2016-03-28T11:30:56+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001911s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002392s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002193s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002409s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000716s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001985s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002648s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000781s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001971s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002406s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000700s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000727s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,56,6) [ RunTime:0.057099s ]
+
+[ 2016-03-28T11:30:58+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002026s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002220s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 58 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002040s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002235s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 58 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002578s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002235s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 58 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001819s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000548s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000523s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,58,6) [ RunTime:0.043246s ]
+
+[ 2016-03-28T11:31:04+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002191s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002273s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 60 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002405s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000716s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 60 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002697s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000769s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001975s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002385s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 60 ) LIMIT 1   [ RunTime:0.000686s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000738s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000721s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,60,6) [ RunTime:0.041155s ]
+
+[ 2016-03-28T11:31:15+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002227s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002294s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 69 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002205s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002401s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 69 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002043s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002741s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000756s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001960s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002392s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001996s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000827s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000722s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,69,6) [ RunTime:0.054436s ]
+
+[ 2016-03-28T11:31:20+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002052s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002211s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 73 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001983s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002191s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 73 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002506s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002203s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 73 ) LIMIT 1   [ RunTime:0.000495s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001821s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,73,6) [ RunTime:0.042479s ]
+
+[ 2016-03-28T11:31:35+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002132s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002333s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 77 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002391s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 77 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001930s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002739s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000776s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001942s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002368s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 77 ) LIMIT 1   [ RunTime:0.000652s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001988s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000734s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,77,6) [ RunTime:0.042445s ]
+
+[ 2016-03-28T11:31:41+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002135s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002368s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 80 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002178s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002367s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 80 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002679s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000758s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001959s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002340s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000665s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000790s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000772s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,80,6) [ RunTime:0.055390s ]
+
+[ 2016-03-28T11:31:52+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001996s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.010199s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002144s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002255s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000528s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001807s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002593s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001817s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002325s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 85 ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001842s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000620s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,85,6) [ RunTime:0.078515s ]
+
+[ 2016-03-28T11:31:55+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001970s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002305s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) [ RunTime:0.076968s ]
+
+[ 2016-03-28T11:31:57+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001975s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002196s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 88 ) AND ( `tid` = 6 ) [ RunTime:0.003189s ]
+
+[ 2016-03-28T11:34:30+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002281s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002333s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 88 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002230s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002422s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000696s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 88 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002741s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000758s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001965s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002402s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 88 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000873s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000781s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,88,6) [ RunTime:0.053311s ]
+
+[ 2016-03-28T11:34:32+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002104s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002403s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 88 ) AND ( `tid` = 6 ) [ RunTime:0.044131s ]
+
+[ 2016-03-28T11:34:38+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001893s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002363s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002191s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002403s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000713s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002021s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002689s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000771s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001975s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002393s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 93 ) LIMIT 1   [ RunTime:0.000689s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000805s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000796s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,93,6) [ RunTime:0.043459s ]
+
+[ 2016-03-28T11:34:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002012s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002258s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) [ RunTime:0.060841s ]
+
+[ 2016-03-28T11:34:44+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002188s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002290s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 98 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002217s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002393s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000689s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 98 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002057s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002652s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001958s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002334s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 98 ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000835s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000780s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,98,6) [ RunTime:0.046228s ]
+
+[ 2016-03-28T11:34:46+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002199s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002307s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 98 ) AND ( `tid` = 6 ) [ RunTime:0.043017s ]
+
+[ 2016-03-28T11:34:52+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001927s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002173s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 78 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002020s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002194s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 78 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001820s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002552s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002176s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 78 ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001831s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,78,6) [ RunTime:0.061182s ]
+
+[ 2016-03-28T11:34:54+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001943s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002157s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 78 ) AND ( `tid` = 6 ) [ RunTime:0.061014s ]
+
+[ 2016-03-28T11:35:10+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002113s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002354s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 31 ) AND ( `sid` = 76 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002177s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002348s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 76 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001934s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002657s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001939s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002295s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 76 ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 31 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001867s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('51','52','56','58','60','69','73','77','80') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,31,50,76,6) [ RunTime:0.038428s ]
+
+[ 2016-03-28T11:35:31+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001966s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002157s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 82 ) AND ( `tid` = 6 ) [ RunTime:0.043464s ]
+
+[ 2016-03-28T11:35:35+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001946s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002196s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 57 ) AND ( `tid` = 6 ) [ RunTime:0.052187s ]
+
+[ 2016-03-28T11:35:37+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002087s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002393s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 61 ) AND ( `tid` = 6 ) [ RunTime:0.060999s ]
+
+[ 2016-03-28T11:35:38+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002030s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002368s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 55 ) AND ( `tid` = 6 ) [ RunTime:0.064407s ]
+
+[ 2016-03-28T11:35:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001973s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002213s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 63 ) AND ( `tid` = 6 ) [ RunTime:0.062150s ]
+
+[ 2016-03-28T11:35:41+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002032s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002324s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 68 ) AND ( `tid` = 6 ) [ RunTime:0.052182s ]
+
+[ 2016-03-28T11:35:42+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002151s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002285s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 83 ) AND ( `tid` = 6 ) [ RunTime:0.054280s ]
+
+[ 2016-03-28T11:35:44+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002091s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002362s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 84 ) AND ( `tid` = 6 ) [ RunTime:0.046572s ]
+
+[ 2016-03-28T11:35:45+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001891s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002145s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 89 ) AND ( `tid` = 6 ) [ RunTime:0.052452s ]
+
+[ 2016-03-28T11:35:47+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001898s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002196s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 90 ) AND ( `tid` = 6 ) [ RunTime:0.054712s ]
+
+[ 2016-03-28T11:35:51+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002213s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002321s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 53 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002165s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002392s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000688s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 53 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002091s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002739s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000757s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001952s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002373s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 53 ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001974s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000584s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000519s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,53,6) [ RunTime:0.040315s ]
+
+[ 2016-03-28T11:35:54+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002107s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002416s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 55 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002311s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000657s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 55 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002652s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002288s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001840s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,55,6) [ RunTime:0.070496s ]
+
+[ 2016-03-28T11:35:56+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002179s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002394s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 57 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002188s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002368s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000708s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 57 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002037s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002593s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000711s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001906s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002311s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 57 ) LIMIT 1   [ RunTime:0.000631s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001949s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,57,6) [ RunTime:0.043068s ]
+
+[ 2016-03-28T11:36:09+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001999s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002099s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002119s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002233s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002533s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002183s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001829s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,64,6) [ RunTime:0.043624s ]
+
+[ 2016-03-28T11:36:13+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002216s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002339s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 68 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002177s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002379s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 68 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002029s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002653s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000755s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002324s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 68 ) LIMIT 1   [ RunTime:0.000676s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001996s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000711s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,68,6) [ RunTime:0.055229s ]
+
+[ 2016-03-28T11:36:33+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002155s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002322s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 79 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002211s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002345s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000694s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 79 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002138s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002672s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000712s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002302s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 79 ) LIMIT 1   [ RunTime:0.000631s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001960s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000684s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000559s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,79,6) [ RunTime:0.067361s ]
+
+[ 2016-03-28T11:36:37+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001933s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002209s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 82 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002177s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 82 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001917s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002465s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002203s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 82 ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000594s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,82,6) [ RunTime:0.041706s ]
+
+[ 2016-03-28T11:36:41+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002008s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002170s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 84 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002033s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002234s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 84 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001945s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002426s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002164s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001848s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79','82') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79','82') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000592s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,84,6) [ RunTime:0.054968s ]
+
+[ 2016-03-28T11:36:43+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002214s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002344s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 83 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002179s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002348s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000691s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 83 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002645s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000759s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002303s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 83 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79','82','84') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79','82','84') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,83,6) [ RunTime:0.040839s ]
+
+[ 2016-03-28T11:36:46+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002126s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002374s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 32 ) AND ( `sid` = 90 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002179s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002350s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 90 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002223s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002602s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 32 ) LIMIT 1   [ RunTime:0.000711s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001916s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002295s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 90 ) LIMIT 1   [ RunTime:0.000630s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 32 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001964s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79','82','84','83') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('53','55','57','64','68','79','82','84','83') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000617s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,32,50,90,6) [ RunTime:0.051852s ]
+
+[ 2016-03-28T11:37:00+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001965s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002069s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) [ RunTime:0.003220s ]
+
+[ 2016-03-28T11:37:02+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002231s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002326s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 53 ) AND ( `tid` = 6 ) [ RunTime:0.048691s ]
+
+[ 2016-03-28T11:37:04+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002051s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002283s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 54 ) AND ( `tid` = 6 ) [ RunTime:0.003299s ]
+
+[ 2016-03-28T11:37:06+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002050s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002330s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) [ RunTime:0.003463s ]
+
+[ 2016-03-28T11:37:09+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001960s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002276s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) [ RunTime:0.003374s ]
+
+[ 2016-03-28T11:37:11+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002195s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002362s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 59 ) AND ( `tid` = 6 ) [ RunTime:0.003435s ]
+
+[ 2016-03-28T11:37:15+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002086s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002381s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002184s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002357s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000667s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002685s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000731s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001922s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002267s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000540s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,51,6) [ RunTime:0.045177s ]
+
+[ 2016-03-28T11:37:17+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002104s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002391s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 51 ) AND ( `tid` = 6 ) [ RunTime:0.051099s ]
+
+[ 2016-03-28T11:37:19+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001991s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002175s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002164s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002465s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001835s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002172s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001812s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000475s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,52,6) [ RunTime:0.051185s ]
+
+[ 2016-03-28T11:37:20+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002139s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002352s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 52 ) AND ( `tid` = 6 ) [ RunTime:0.045704s ]
+
+[ 2016-03-28T11:37:22+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001963s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002152s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 54 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002238s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 54 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002596s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001803s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002176s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 54 ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001825s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,54,6) [ RunTime:0.046318s ]
+
+[ 2016-03-28T11:37:24+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001964s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002198s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 54 ) AND ( `tid` = 6 ) [ RunTime:0.062169s ]
+
+[ 2016-03-28T11:37:26+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001931s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002161s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002212s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002440s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001837s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002156s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001829s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,56,6) [ RunTime:0.050000s ]
+
+[ 2016-03-28T11:37:27+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002207s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002338s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 56 ) AND ( `tid` = 6 ) [ RunTime:0.065944s ]
+
+[ 2016-03-28T11:37:32+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002140s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002349s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 59 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002178s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002339s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 59 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002772s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000759s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002400s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000677s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001984s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,59,6) [ RunTime:0.048665s ]
+
+[ 2016-03-28T11:37:34+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001923s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002151s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 59 ) AND ( `tid` = 6 ) [ RunTime:0.052294s ]
+
+[ 2016-03-28T11:37:37+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001926s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002164s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 60 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002186s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 60 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001838s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002476s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002179s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 60 ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001825s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,60,6) [ RunTime:0.048335s ]
+
+[ 2016-03-28T11:37:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002082s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002345s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 60 ) AND ( `tid` = 6 ) [ RunTime:0.064338s ]
+
+[ 2016-03-28T11:37:42+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002126s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002326s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 62 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002171s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002326s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000685s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 62 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002079s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002673s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000761s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001956s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002370s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 62 ) LIMIT 1   [ RunTime:0.000675s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000638s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,62,6) [ RunTime:0.037730s ]
+
+[ 2016-03-28T11:37:44+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002009s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002179s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 62 ) AND ( `tid` = 6 ) [ RunTime:0.063437s ]
+
+[ 2016-03-28T11:37:46+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002002s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002172s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 63 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002018s ]
+
+[ 2016-03-28T11:37:52+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002098s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002273s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) [ RunTime:0.003441s ]
+
+[ 2016-03-28T11:37:55+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001931s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002121s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002053s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002129s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001803s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002483s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002013s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002191s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000475s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,64,6) [ RunTime:0.042696s ]
+
+[ 2016-03-28T11:37:56+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001914s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002172s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) [ RunTime:0.064964s ]
+
+[ 2016-03-28T11:38:00+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001928s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002130s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) [ RunTime:0.003226s ]
+
+[ 2016-03-28T11:38:14+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002098s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002218s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 63 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002148s ]
+
+[ 2016-03-28T11:38:18+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001976s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002396s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 69 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002224s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002340s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 69 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002045s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002658s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000758s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001965s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002415s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000681s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001986s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000638s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000628s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,69,6) [ RunTime:0.052072s ]
+
+[ 2016-03-28T11:38:20+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001940s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002170s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 69 ) AND ( `tid` = 6 ) [ RunTime:0.055933s ]
+
+[ 2016-03-28T11:38:23+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001933s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002136s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 71 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002175s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 71 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001827s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002494s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002188s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 71 ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001825s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,71,6) [ RunTime:0.057811s ]
+
+[ 2016-03-28T11:38:24+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002061s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002337s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 71 ) AND ( `tid` = 6 ) [ RunTime:0.061225s ]
+
+[ 2016-03-28T11:38:27+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001966s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002149s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 72 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002012s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002209s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 72 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002543s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000587s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001784s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002235s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 72 ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,72,6) [ RunTime:0.042371s ]
+
+[ 2016-03-28T11:38:28+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001956s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002191s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 72 ) AND ( `tid` = 6 ) [ RunTime:0.060046s ]
+
+[ 2016-03-28T11:38:31+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001920s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002138s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 73 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002153s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 73 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002378s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001824s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002200s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 73 ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001830s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,73,6) [ RunTime:0.061687s ]
+
+[ 2016-03-28T11:38:32+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002158s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002272s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 73 ) AND ( `tid` = 6 ) [ RunTime:0.064942s ]
+
+[ 2016-03-28T11:38:35+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002211s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002370s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 75 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002134s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002355s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000634s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 75 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001916s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002637s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001896s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002202s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001831s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000474s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000459s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,75,6) [ RunTime:0.042371s ]
+
+[ 2016-03-28T11:38:36+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001977s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002137s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 75 ) AND ( `tid` = 6 ) [ RunTime:0.051689s ]
+
+[ 2016-03-28T11:38:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001940s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002170s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 77 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002021s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002229s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 77 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002560s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002199s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 77 ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001807s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000461s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,77,6) [ RunTime:0.050130s ]
+
+[ 2016-03-28T11:38:41+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002064s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002353s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 77 ) AND ( `tid` = 6 ) [ RunTime:0.061882s ]
+
+[ 2016-03-28T11:38:44+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002107s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002331s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 79 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002171s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002352s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000691s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 79 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002416s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002675s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000754s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001957s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002355s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 79 ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001982s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000658s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,79,6) [ RunTime:0.040031s ]
+
+[ 2016-03-28T11:38:45+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002068s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002350s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 79 ) AND ( `tid` = 6 ) [ RunTime:0.070559s ]
+
+[ 2016-03-28T11:38:51+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001978s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002137s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002211s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002542s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000606s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002198s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 85 ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001821s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,85,6) [ RunTime:0.045742s ]
+
+[ 2016-03-28T11:38:53+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002149s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002335s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 85 ) AND ( `tid` = 6 ) [ RunTime:0.046737s ]
+
+[ 2016-03-28T11:38:55+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002092s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002374s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 86 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002167s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002362s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000675s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 86 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002039s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002661s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002375s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 86 ) LIMIT 1   [ RunTime:0.000666s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001977s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000636s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,86,6) [ RunTime:0.058419s ]
+
+[ 2016-03-28T11:38:56+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002111s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002374s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 86 ) AND ( `tid` = 6 ) [ RunTime:0.173637s ]
+
+[ 2016-03-28T11:38:58+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001974s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002155s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 87 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001998s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002229s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 87 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002534s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001795s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002211s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 87 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,87,6) [ RunTime:0.055244s ]
+
+[ 2016-03-28T11:38:59+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002175s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002296s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 87 ) AND ( `tid` = 6 ) [ RunTime:0.062079s ]
+
+[ 2016-03-28T11:39:07+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002265s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002369s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 91 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002255s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002395s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000655s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 91 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002619s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000708s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002285s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 91 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001812s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000461s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,91,6) [ RunTime:0.052871s ]
+
+[ 2016-03-28T11:39:08+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001925s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002193s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 91 ) AND ( `tid` = 6 ) [ RunTime:0.047068s ]
+
+[ 2016-03-28T11:39:12+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001971s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002200s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002223s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001781s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002571s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002168s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 93 ) LIMIT 1   [ RunTime:0.000511s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001812s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000463s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,93,6) [ RunTime:0.039848s ]
+
+[ 2016-03-28T11:39:14+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002136s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002336s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 93 ) AND ( `tid` = 6 ) [ RunTime:0.059583s ]
+
+[ 2016-03-28T11:39:16+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001934s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002190s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 94 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002178s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 94 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001865s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002490s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000582s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001783s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002167s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 94 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001822s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,94,6) [ RunTime:0.057236s ]
+
+[ 2016-03-28T11:39:17+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001930s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002151s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 94 ) AND ( `tid` = 6 ) [ RunTime:0.139754s ]
+
+[ 2016-03-28T11:39:20+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001966s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002134s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 95 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002206s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 95 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002541s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001827s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002192s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001826s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000491s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,95,6) [ RunTime:0.044899s ]
+
+[ 2016-03-28T11:39:21+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002148s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002345s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 95 ) AND ( `tid` = 6 ) [ RunTime:0.051903s ]
+
+[ 2016-03-28T11:39:23+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001926s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002170s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 96 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002019s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002184s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 96 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001800s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002484s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001814s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002165s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 96 ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001819s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,96,6) [ RunTime:0.041532s ]
+
+[ 2016-03-28T11:39:25+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001985s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002154s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 96 ) AND ( `tid` = 6 ) [ RunTime:0.053858s ]
+
+[ 2016-03-28T11:39:28+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002090s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002250s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 97 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002084s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002202s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 97 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002543s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002188s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 97 ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001815s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000470s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,97,6) [ RunTime:0.046005s ]
+
+[ 2016-03-28T11:39:29+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002086s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002281s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 97 ) AND ( `tid` = 6 ) [ RunTime:0.051940s ]
+
+[ 2016-03-28T11:39:34+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002114s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002366s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 100 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002436s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000666s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 100 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002699s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000727s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001933s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002251s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 100 ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001837s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000495s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,100,6) [ RunTime:0.040483s ]
+
+[ 2016-03-28T11:39:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001982s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002195s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 100 ) AND ( `tid` = 6 ) [ RunTime:0.039042s ]
+
+[ 2016-03-28T11:39:47+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002017s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002293s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 98 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002243s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002383s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000703s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 98 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002697s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000775s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002377s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 98 ) LIMIT 1   [ RunTime:0.000687s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000653s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,98,6) [ RunTime:0.041559s ]
+
+[ 2016-03-28T11:40:15+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002232s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002225s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 35 ) AND ( `sid` = 55 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002227s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002342s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000698s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 55 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002045s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002651s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.000754s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001967s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002368s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000667s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 35 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001994s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63','98') ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000779s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN ('63','98') ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000687s ]
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,35,50,55,6) [ RunTime:0.042177s ]
+
+[ 2016-03-28T11:40:32+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002071s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002279s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 36 ) AND ( `sid` = 67 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002253s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002416s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000722s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 67 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002723s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 36 ) LIMIT 1   [ RunTime:0.000771s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 36 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002352s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 67 ) LIMIT 1   [ RunTime:0.000701s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 36 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.002001s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000536s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000482s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,36,50,67,6) [ RunTime:0.041608s ]
+
+[ 2016-03-28T11:40:33+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001994s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002235s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 36 ) AND ( `sid` = 67 ) AND ( `tid` = 6 ) [ RunTime:0.045024s ]
+
+[ 2016-03-28T11:40:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001960s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002193s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 36 ) AND ( `sid` = 65 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002016s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002222s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 65 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002561s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 36 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 36 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002208s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 36 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001802s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000340s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,36,50,65,6) [ RunTime:0.055215s ]
+
+[ 2016-03-28T11:40:40+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002187s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002364s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 36 ) AND ( `sid` = 65 ) AND ( `tid` = 6 ) [ RunTime:0.057700s ]
+
+[ 2016-03-28T11:40:46+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002236s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002322s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 37 ) AND ( `sid` = 66 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002225s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002340s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000691s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 66 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002093s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002595s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 37 ) LIMIT 1   [ RunTime:0.000759s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 37 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001963s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002351s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 66 ) LIMIT 1   [ RunTime:0.000696s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 37 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001992s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000511s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000520s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,37,50,66,6) [ RunTime:0.043758s ]
+
+[ 2016-03-28T11:40:47+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001924s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002125s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 37 ) AND ( `sid` = 66 ) AND ( `tid` = 6 ) [ RunTime:0.055097s ]
+
+[ 2016-03-28T11:40:59+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002230s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002339s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 37 ) AND ( `sid` = 65 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002173s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002346s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 65 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001899s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002668s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 37 ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 37 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002221s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 37 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001804s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000359s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000338s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,37,50,65,6) [ RunTime:0.042187s ]
+
+[ 2016-03-28T11:41:00+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002061s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002198s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 37 ) AND ( `sid` = 66 ) AND ( `tid` = 6 ) [ RunTime:0.003187s ]
+
+[ 2016-03-28T11:41:03+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002178s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002282s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 37 ) AND ( `sid` = 65 ) AND ( `tid` = 6 ) [ RunTime:0.061434s ]
+
+[ 2016-03-28T11:41:19+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002074s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002159s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 38 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002029s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002177s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001790s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002513s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 38 ) LIMIT 1   [ RunTime:0.000601s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 38 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001797s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002229s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 38 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001822s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000360s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000340s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,38,50,64,6) [ RunTime:0.041991s ]
+
+[ 2016-03-28T11:41:20+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001990s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002167s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 38 ) AND ( `sid` = 64 ) AND ( `tid` = 6 ) [ RunTime:0.059788s ]
+
+[ 2016-03-28T11:41:23+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002146s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002387s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 38 ) AND ( `sid` = 72 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002194s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002379s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000697s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 72 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002065s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002563s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 38 ) LIMIT 1   [ RunTime:0.000771s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 38 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001958s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002363s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 72 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 38 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001980s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000522s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000517s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,38,50,72,6) [ RunTime:0.050365s ]
+
+[ 2016-03-28T11:41:25+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001955s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002116s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 38 ) AND ( `sid` = 72 ) AND ( `tid` = 6 ) [ RunTime:0.049979s ]
+
+[ 2016-03-28T11:41:34+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002201s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002344s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 39 ) AND ( `sid` = 100 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002339s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 100 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002038s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.002621s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 39 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001950s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002365s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 100 ) LIMIT 1   [ RunTime:0.000684s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 39 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001985s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000526s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000516s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,39,50,100,6) [ RunTime:0.050440s ]
+
+[ 2016-03-28T11:41:36+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002090s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002256s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 39 ) AND ( `sid` = 100 ) AND ( `tid` = 6 ) [ RunTime:0.063927s ]
+
+[ 2016-03-28T11:41:38+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.002075s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002382s ]
+SQL: SELECT * FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 39 ) AND ( `sid` = 95 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002208s ]
+SQL: SHOW COLUMNS FROM `enrollment` [ RunTime:0.002369s ]
+SQL: SELECT * FROM `enrollment` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `sid` = 95 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.002010s ]
+SQL: SHOW COLUMNS FROM `enrollment_content` [ RunTime:0.103385s ]
+SQL: SELECT * FROM `enrollment_content` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000714s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `enrollment_list` WHERE ( `cid` = 39 ) AND ( `bid` = 50 ) AND ( `tid` = 6 ) LIMIT 1   [ RunTime:0.001922s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.002338s ]
+SQL: SELECT * FROM `student` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SELECT `sid` FROM `enrollment_list` WHERE ( `cid` = 39 ) AND ( `bid` = 50 ) AND ( `tid` = 6 )  [ RunTime:0.001938s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1   [ RunTime:0.000467s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 1 ) LIMIT 1  
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wamp\www\ping\ThinkPHP\Lib\Core\Db.class.php 第 497 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1   [ RunTime:0.000460s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `xingbie` = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `student` WHERE ( `id` IN () ) AND ( `xingbie` = 0 ) LIMIT 1  
+SQL: INSERT INTO `enrollment_list` (`eid`,`cid`,`bid`,`sid`,`tid`) VALUES (10,39,50,95,6) [ RunTime:0.050370s ]
+
+[ 2016-03-28T11:41:39+08:00 ] 172.30.2.154 /ping/Home/Enrollment/ajaxAdd.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.001920s ]
+SQL: SELECT * FROM `term` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `enrollment_list` [ RunTime:0.002169s ]
+SQL: DELETE FROM `enrollment_list` WHERE ( `eid` = 10 ) AND ( `cid` = 39 ) AND ( `sid` = 95 ) AND ( `tid` = 6 ) [ RunTime:0.062237s ]
+

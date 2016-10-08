@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$Think.config.webname}教导处管理平台</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<load file="__PUBLIC__/amazeui2.6/css/amazeui.min.css" />
+	<load file="__PUBLIC__/Css/app.css" />
+
+</head>
+<style>
+	.topheader{
+		height:120px;
+		background-color:#0e90d2;
+		border:1px solid #efefef;
+		},
+	body{
+			background-color: #efefef;
+		}
+	.banner{
+		color: #ffffff;
+	}
+</style>
+<body>
+	<!--[if lt IE 9]>
+	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+	<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+	<![endif]-->
+
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="__PUBLIC__/amazeui2.6/js/jquery.min.js"></script>
+	
+	<!--<![endif]-->
+	<script src="__PUBLIC__/amazeui2.6/js/amazeui.min.js"></script>
+	<div class="am-g am-g-fixed topheader">
+		<div class="am-u-md-2 am-u-sm-4">
+			<img src="__ROOT__/Uploads/{$Think.config.logo}" class="am-img-responsive am-fr am-padding-top-xs" style="height:110px;" alt="">
+		</div>
+		<div class="am-u-md-10 am-u-sm-8">
+			<div class="am-g am-padding-left">
+				<h1 class="am-padding-top-sm banner">{$Think.config.webname}</h1>
+			</div>
+			<div class="am-g am-padding-left">
+				<h1 class=" banner">{$Think.config.sysname}</h1>
+			</div>
+		</div>
+	</div>

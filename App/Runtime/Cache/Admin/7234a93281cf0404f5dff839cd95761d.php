@@ -1,0 +1,103 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>系统设置</title>
+	<link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" />
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/uploadify3.2.1/uploadify.css" />
+	<script type="text/javascript" src="__PUBLIC__/uploadify3.2.1/jquery.uploadify.min.js"></script>
+</head>
+<body>
+	<div class="am-g am-padding">
+		<div class="am-panel am-panel-secondary">
+			<div class="am-panel-hd">系统设置</div>
+			<div class="am-panel-bd am-cf">
+				<form action="<?php echo U(GROUP_NAME.'/System/addHandle');?>" method="POST" class="am-form am-form-horizontal"  enctype="multipart/form-data">
+					<div class="am-form-group">
+						<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">学校名称</label>
+						<div class="am-u-sm-4 am-u-end">
+							<input type="text" id="doc-ipt-3" value="<?php echo (C("webname")); ?>" name="webname" placeholder="输入学校名称">
+						</div>
+					</div>
+					<div class="am-form-group">
+						<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">平台名称</label>
+						<div class="am-u-sm-4 am-u-end">
+							<input type="text" id="doc-ipt-3" value="<?php echo (C("sysname")); ?>" name="sysname" placeholder="输入平台名称">
+						</div>
+					</div>
+					<div class="am-form-group">
+						<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">页脚版权信息</label>
+						<div class="am-u-sm-4 am-u-end">
+							<input type="text" id="doc-ipt-3" value="<?php echo (C("copyright")); ?>" name="copyright" placeholder="版权信息">
+						</div>
+					</div>
+					<div class="am-form-group">
+						<label for="" class="am-u-sm-2 am-form-label">LOGO</label>
+						<div class="am-u-sm-2">
+							<img src="__ROOT__/Uploads/<?php echo (C("logo")); ?>" id="imglogo" alt="" class="am-img-responsive">
+							<input type="hidden" id="hidlogo" name="logo" value="<?php echo (C("logo")); ?>">
+						</div>
+						<div class="am-u-sm-2 am-u-end am-padding-top-lg">
+							<input type="file" name="logofile" id="logo">
+						</div>
+					</div>
+					<div class="am-form-group">
+						<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">学生评优状态</label>
+						<div class="am-u-sm-4 am-u-end">
+							<div class="am-form-group">
+								<label class="am-radio-inline">
+									<input type="radio" <?php if(C("pingyou")== 1): ?>checked="checked"<?php endif; ?> value="1" name="pingyou"> 启用
+								</label>
+								<label class="am-radio-inline">
+									<input type="radio"  <?php if(C("pingyou")== 0): ?>checked="checked"<?php endif; ?> name="pingyou" value="0"> 禁用
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6 am-u-end am-text-center">
+						<button class="am-btn am-btn-primary">设置系统信息</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+			var uploadUrl = "<?php echo U(GROUP_NAME.'/System/upload');?>";
+			var sessionid = "<?php echo session_id();?>"
+			//图片文件根目录
+			var imgRoot = "__ROOT__/Uploads/";
+			$('#logo').uploadify({
+		        swf:'__PUBLIC__/uploadify3.2.1/uploadify.swf',
+		        uploader:uploadUrl,
+		        //定义上传按钮的宽度
+		        width:120,
+		        //定义上传按钮的高度
+		        height:30,
+		        //按钮文字
+		        buttonText: '选择文件...',
+		        //允许选择文件类型
+		        fileTypeExts:'*.jpg;*.png;*.gif',
+		        //由于在THINKPHP中使用uploadify会丢失session,需要手动传输session
+		        //为什么传输的数据名称为session_id,这是在项目配置文件中进行了配置
+		        //配置了在THINKPHP中session的变量名为session_id
+		        //配置方法'VAR_SESSION_ID'=> 'session_id', 
+		        formData:{'session_id':sessionid},
+		        onUploadSuccess:function(file,data,response){
+		        //上传成功回调函数
+		        		data = eval('('+data+')');
+			        	if(data.status==1){
+			        		$('#hidlogo').val(data.logo);
+			        		$('#imglogo').attr('src',imgRoot+data.logo);
+			        	}else{
+			        		alert(data.message);
+			        	}
+			        }
+		    });
+
+		 });
+	</script>
+</body>
+</html>

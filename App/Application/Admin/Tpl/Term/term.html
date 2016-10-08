@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="大眼仔~旭" />
+    <css file="__PUBLIC__/Admin/Css/public.css" />
+	<title>学期添加</title>
+</head>
+
+<body>
+<form action="{:U(GROUP_NAME.'/Term/addTerm')}" method="POST">
+    <table class="table">
+        <thead>
+            <tr>
+                <td colspan="2">学期添加</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="right">学期名</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td align="right">状态</td>
+                <td><input type="radio" name="status" value="0" />禁用<input type="radio" checked="checked" name="status" value="1" />启用(注：只有一个启用学期，一个启用其他都会禁用)</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="添加" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+</body>
+</html>

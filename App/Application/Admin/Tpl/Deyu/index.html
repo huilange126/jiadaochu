@@ -1,0 +1,110 @@
+<include file="Common:header" />
+<div class="am-g am-padding">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd">德育奖惩信息搜索</div>
+		<!-- 学生信息搜索框开始 -->
+		<div class="am-panel-bd">
+			<form class="am-form am-form-horizontal" method="POST" action="{:U(GROUP_NAME.'/Deyu/index')}">
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">输入学号或者姓名</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="text" name="keywords" class="am-form-field" placeholder="输入关键字"/>
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">输入描述信息关键字</label>
+					<div class="am-u-sm-4 am-u-end">
+						<input type="text" name="miaoshu" class="am-form-field" placeholder="输入描述信息关键字"/>
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">选择开始日期</label>
+					<div class="am-u-sm-2 am-u-end">
+						<input type="text" name="shijianStart" class="am-form-field" placeholder="选择开始日期" data-am-datepicker readonly required value="" />
+					</div>
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">选择截止日期</label>
+					<div class="am-u-sm-2 am-u-end">
+						<input type="text" name="shijianEnd" class="am-form-field" placeholder="选择截止日期" data-am-datepicker readonly required value="" />
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label">信息类型</label>
+					<div class="am-u-sm-4 am-u-end">
+						<div class="am-form-group">
+							<label class="am-radio-inline">
+								<input type="radio" value="1" name="leixing"> 奖励信息
+							</label>
+							<label class="am-radio-inline">
+								<input type="radio" value="2" name="leixing"> 惩罚信息
+							</label>
+							<label class="am-radio-inline">
+								<input type="radio" value="3" name="leixing"> 其他
+							</label>
+							<label class="am-radio-inline">
+								<input type="radio" checked="checked"  value="0" name="leixing"> 不限
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="am-form-group">
+					<div class="am-u-sm-6 am-u-end">
+						<button class="am-btn am-btn-primary am-center">搜索德育奖惩信息</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- 学生信息搜索框结束 -->
+		<!-- 搜索结果列表开始 -->
+		<!-- 导出EXCEL结果 -->
+		<table class="am-table am-table-bordered am-table-striped am-table-hover">
+			<thead>
+				<tr class="am-primary">
+					<th class="am-text-center" style="width: 5%">序号</th>
+					<th class="am-text-center" style="width: 10%">学号</th>
+					<th class="am-text-center" style="width: 10%">姓名</th>
+					<th class="am-text-center" style="width: 5%">性别</th>
+					<th class="am-text-center" style="width: 5%">类型</th>
+					<th class="am-text-center" style="width: 10%">添加时间</th>
+					<th>描述信息</th>
+					<th>操作
+					<if condition="$jiangchengIdList neq ''">
+					<a href="{:U(GROUP_NAME.'/Deyu/daochuExcel',array('search'=>$jiangchengIdList))}" class="am-btn am-btn-warning am-btn-xs am-fr">导出EXCEL结果</a>
+					</if>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="jiangcheng" item="v">
+				<tr class="am-active">
+					<td class="am-text-center">{++$num}</td>
+					<td class="am-text-center">{$v['student']['xuehao']}</td>
+					<td class="am-text-center">{$v['student']['name']}</td>
+					<td class="am-text-center">{$v['student']['xingbie']|getSex=###}</td>
+					<td class="am-text-center">{$v['leixing']|getJiangChengLeixing=###}</td>
+					<td class="am-text-center">{$v['riqi']|date='Y-m-d',###}</td>
+					<td>{$v['miaoshu']}</td>
+					<td>
+						<a href="{:U(GROUP_NAME.'/Deyu/detail',array('id'=>$v['student']['id']))}" class="am-btn am-btn-primary am-btn-xs">查看该学生德育报告</a>
+						<a href="{:U(GROUP_NAME.'/Deyu/edit',array('id'=>$v['id']))}" class="am-btn am-btn-success am-btn-xs">编辑</a>
+						<a href="{:U(GROUP_NAME.'/Deyu/del',array('id'=>$v['id']))}" onclick="return del();" class="am-btn am-btn-danger am-btn-xs">删除</a>
+					</td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan="8">
+						<ul class="am-pagination">
+						{$show}
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 搜索结果列表结束 -->
+	</div>
+</div>
+	<script>
+		function del(){
+			return confirm('确定要删除么？');
+		}
+	</script>
+<include file="Common:footer" />

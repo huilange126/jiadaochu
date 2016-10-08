@@ -1,0 +1,46 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-success">
+		<div class="am-panel-hd am-cf">班级学生列表 <a href="{:U(GROUP_NAME.'/Jiaodaochu/index')}" class="am-btn am-btn-warning am-margin-left am-btn-xs">返回班级首页</a><a href="{:U(GROUP_NAME.'/Chengji/index')}" class="am-btn am-btn-success am-margin-left am-btn-xs">返回考试管理</a></div>
+		<table class="am-table am-table-bordered am-table-striped am-table-hover">
+		<thead>
+			<tr>
+				<th style="width:5%" class="am-text-center">序号</th>
+				<th style="width:5%" class="am-text-center">学号</th>
+				<th style="width:10%" class="am-text-center">姓名</th>
+				<th style="width:5%" class="am-text-center">性别</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach name="student" item="v">
+			<tr>
+				<td class="am-text-center">{++$num}</td>
+				<td class="am-text-center">{$v['xuehao']}</td>
+				<td class="am-text-center">{$v['name']}</td>
+				<td class="am-text-center">
+					<if condition="$v['xingbie'] eq 0">
+						女
+					<else />
+						男
+					</if>
+				</td>
+				<td>
+					<a href="#" class="am-btn am-btn-primary am-btn-xs">基本信息</a>
+					<a href="{:U(GROUP_NAME.'/StudentFenshu/fenshuList',array('student'=>$v['id']))}" class="am-btn am-btn-success am-btn-xs">考试成绩</a>
+				</td>
+			</tr>
+			</foreach>
+			<tr>
+				<td colspan="5">
+					<ul class="am-pagination">
+					{$show}
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+</div>
+<include file="Common:footer" />

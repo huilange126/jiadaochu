@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author"/>
+    <!-- <css file="__PUBLIC__/Admin/Css/public.css" /> -->
+    <css file="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" />
+    <load file="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" />
+    <title>修改学生成绩页面</title>
+</head>
+
+<body>
+    <div class="am-g am-padding">
+        <div class="am-panel am-panel-secondary">
+          <div class="am-panel-hd">
+              学生成绩修改
+          </div>
+          <div class="am-panel-bd">
+                <form class="am-form am-form-horizontal" method="POST" action="{:U(GROUP_NAME.'/Chengji/editHandle')}">
+                    <div class="am-form-group">
+                        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">学期</label>
+                        <div class="am-u-sm-4 am-u-end">
+                            <input type="text" readonly="" value="{$term['name']}">
+                            <input type="hidden" id="doc-ipt-3" name="term" value="{$term['id']}">
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">学号</label>
+                        <div class="am-u-sm-4 am-u-end">
+                            <input type="text" readonly="" value="{$student['xuehao']}">
+                            <input type="hidden" id="doc-ipt-3" name="xuehao" value="{$student['id']}">
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">姓名</label>
+                        <div class="am-u-sm-4 am-u-end">
+                            <input type="text" readonly="" value="{$student['name']}">
+                        </div>
+                    </div>
+                    <foreach name="chengji" item="v">
+                    <div class="am-form-group">
+                        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">{$v['xueke']}</label>
+                        <div class="am-u-sm-4 am-u-end">
+                            <input type="text" attr="xueke" name="xueke[{$v['xuekeid']}]" value="{$v['fenshu']}">
+                            <input type="hidden" id="doc-ipt-3" name="xuehao" value="{$student['id']}">
+                        </div>
+                    </div>
+                    </foreach>
+                    <div class="am-form-group">
+                    <div class="am-u-sm-6 am-u-end">
+                        <button id="btn" class="am-btn am-btn-primary am-center">
+                            修改学生成绩
+                        </button>
+                    </div>
+                    </div>
+                </form>
+          </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            
+            $('#btn').click(function(event) {
+                var isnull = false;
+
+                $.each($('input[attr=xueke]'), function(index, val) {
+                     if($(val).val()==''){
+                        isnull = true;
+                        return;
+                     }
+                });
+                if(isnull){
+                    alert('成绩不能为空');
+                    return false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

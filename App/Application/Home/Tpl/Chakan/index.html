@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="大眼仔~旭" />
+    <css file="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" />
+	<title>教师评教查看页面</title>
+</head>
+
+<body>
+<div class="am-g am-g-fixed">
+    <p style="margin-top: 100px;">
+        <h1 class="am-text-primary am-margin am-text-center">山东省青岛实验初级中学</h1>
+        <h2 class="am-text-warning am-margin am-text-center">教师评教系统信息查看</h2>
+    </p>
+</div>
+<hr />
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-6 am-u-md-centered">
+    <form action="{:U(GROUP_NAME.'/Chakan/login')}" method="POST">
+        <div class="am-form">
+            <div class="am-form-group">
+                <label class="am-text-primary am-text-lg">
+                    请输入身份证号码
+                </label>
+                <input type="text" name="shenfenzheng" />
+            </div>
+            <button type="submit" class="am-btn am-btn-primary am-btn-block">查看结果</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+</body>
+</html>

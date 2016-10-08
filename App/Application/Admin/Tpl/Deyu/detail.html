@@ -1,0 +1,29 @@
+<include file="Common:header" />
+<div class="am-g am-padding">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd">学生德育信息表</div>
+		<table class="am-table am-table-bordered">
+			<tbody>
+				<tr class="am-active">
+					<td>学号</td>
+					<td>{$student['xuehao']}</td>
+					<td>姓名</td>
+					<td>{$student['name']}</td>
+					<td>性别</td>
+					<td>{$student['xingbie']|getSex=###}</td>
+				</tr>
+				<tr>
+					<td>德育信息</td>
+					<td colspan="5">
+						<foreach name="student['jiangcheng']" item="v">
+							{$v['riqi']|date='Y-m-d',###}
+							{$v['leixing'|getJiangChengLeixing=###]}
+							{$v['miaoshu']}
+						</foreach>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<include file="Common:footer" />

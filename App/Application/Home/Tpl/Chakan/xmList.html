@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="author" content="大眼仔~旭" />
+    <link href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<title>项目列表</title>
+</head>
+
+<body>
+<div class="am-g">
+    <p>
+        <h1 class="am-text-center am-text-primary">{$teachername}评价项目列表</h1>
+    </p>
+</div>
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-8 am-u-md-centered">
+        <ul class="am-list">
+            <foreach name="xm" item="v">
+                <li><a href="{:U(GROUP_NAME.'/Chakan/result',array('tid'=>$tid,'xid'=>$v['id']))}"><span class="am-badge am-badge-primary am-margin-right">{$now+$key}</span>{$v['term']}&nbsp;&nbsp;{$v['name']}</a></li>
+            </foreach>
+            
+        </ul>
+    </div>
+</div>
+<div class="am-container">
+    <div class="am-u-md-8 am-u-md-centered">
+        <ul class="am-pagination am-pagination-centered">
+          {$show}
+        </ul>
+    </div>
+</div>
+<div class="am-g">
+    <p class="am-text-center">信息技术办公室编制</p>
+</div>
+</body>
+</html>

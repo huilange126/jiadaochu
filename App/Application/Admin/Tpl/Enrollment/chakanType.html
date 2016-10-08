@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报表查看类型选择</title>
+	<load file="http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.min.css" />
+</head>
+<body>
+	<div class="am-g am-padding">
+		<div class="am-panel am-panel-secondary">
+			<div class="am-panel-hd">
+			<h3 class="am-panel-title">报名结果查看报表类型选择</h3>
+			</div>
+			<ul class="am-list">
+				<foreach name="type" item="v">
+				<li><a href="{:U(GROUP_NAME.'/Enrollment/chakan',array('type'=>$v['type'],'id'=>$v['eid']))}"><span class="am-badge am-badge-primary am-margin-right">{++$key}</span>{$v['title']}</a></li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

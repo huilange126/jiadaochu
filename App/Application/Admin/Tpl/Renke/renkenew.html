@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{$Think.config.webname}教导处管理平台</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <load file="__PUBLIC__/amazeui2.6/css/amazeui.min.css" />
+  <load file="__PUBLIC__/Css/app.css" />
+
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="__PUBLIC__/amazeui2.6/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="__PUBLIC__/amazeui2.6/js/amazeui.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var postURL = "{:U(GROUP_NAME.'/Renke/addRenke')}";
+      var reloadURL = "{:U(GROUP_NAME.'/Renke/renke')}";
+            //$('#my-select').click();
+            $('#my-select').dblclick(function(){
+              var isHave = false;
+              $('#your-select option').each(function(){       
+                if($('#my-select').val()==$(this).val()) isHave =true;
+
+              });
+              if(!isHave){
+                $('#your-select').append("<option value='"+$('#my-select').val()+"'>"+$('#my-select').find('option:selected').text()+"</option>")
+                    //$('#my-select option:selected').remove();
+                  }
+
+                });
+            
+            $('#your-select').dblclick(function(){
+                //$('#my-select').append("<option value='"+$('#your-select').val()+"'>"+$('#your-select').find('option:selected').text()+"</option>")
+                $('#your-select option:selected').remove();
+              });
+            
+            $('#btn-tijiao').click(function(){
+
+              if($('#banji').html()==""){
+                alert('请先选择班级');
+                return false;
+              }else{
+                var banji = $('#hidbanji').val();
+              }
+
+              var myselect='start';
+              $('#your-select option').each(function(){
+
+                myselect = myselect +','+ $(this).val();
+
+              });
+              if(myselect=='start'){
+                alert('请添加老师');
+                return false;
+              }
+
+              var term = $('#hidterm').val();
+
+              $.post(postURL,{banji:banji,myselect:myselect,term:term},function(data){
+
+                if(data.status==1){
+
+                  alert('添加成功');
+
+                        //location.reload(reloadURL);
+                        
+                        location.href = reloadURL;
+                      }
+
+                    });
+
+            });
+          });
+
+    function aclick(obj){
+
+      $('#banji').html(obj.id);
+      $('#hidbanji').val(obj.title);
+
+    }
+  </script>
+  <div class="am-panel am-panel-default">
+    <div class="am-panel-hd">面板标题</div>
+    <div class="am-panel-bd">
+      面板内容
+    </div>
+  </div>
+</body>
+</html>

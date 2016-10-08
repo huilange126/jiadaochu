@@ -1,0 +1,48 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-success">
+		<div class="am-panel-hd am-cf">班级学生列表 <a href="{:U(GROUP_NAME.'/Chengji/detail',array('id'=>$kaoshi['id']))}" class="am-btn am-btn-warning am-margin-left am-btn-xs">返回考试成绩列表</a></div>
+		<div class="am-panel-bd">
+			<form class="am-form am-form-horizontal" action="{:U(GROUP_NAME.'/Chengji/dangechengjiHandle')}" method="POST">
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">学号</label>
+					<div class="am-u-md-3 am-u-end">
+						<select id="doc-select-1" name="student">
+							<option value="0">请选择学生</option>
+							<foreach name="student" item="v">
+							<option value="{$v['id']}">{$v['xuehao']}{$v['name']}</option>
+							</foreach>
+						</select>
+						<span class="am-form-caret"></span>
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试名称</label>
+					<div class="am-u-md-3 am-u-end">
+						<input type="text" readonly="" value="{$kaoshi['mingcheng']}">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">考试时间</label>
+					<div class="am-u-md-3 am-u-end">
+						<input type="text" readonly="" value="{$kaoshi['shijian']|date='Y-m-d',###}">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">得分</label>
+					<div class="am-u-md-3 am-u-end">
+						<input type="hidden" name="kaoshi" value="{$kaoshi['id']}">
+						<input type="text" value="{$chengji['fenshu']}" name="fenshu">
+					</div>
+				</div>
+				<div class="am-form-group">
+					<div class="am-u-md-6 am-u-end">
+						<button class="am-btn am-btn-primary am-center" id="btnadd">修改成绩</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<include file="Common:footer" />

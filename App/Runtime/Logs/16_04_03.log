@@ -1,0 +1,106 @@
+[ 2016-04-03T18:32:12+08:00 ] 127.0.0.1 /ping/assets/js/amazeui.ie8polyfill.min.js
+ERR: 无法加载模块:assets
+
+[ 2016-04-03T19:06:53+08:00 ] 127.0.0.1 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 非法操作:checkusername
+
+[ 2016-04-03T19:06:56+08:00 ] 127.0.0.1 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-04-03T19:07:01+08:00 ] 127.0.0.1 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+ERR: 非法操作:checkusername
+
+[ 2016-04-03T19:07:01+08:00 ] 127.0.0.1 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-04-03T19:07:28+08:00 ] 127.0.0.1 /ping/Admin/System/addHandle.html
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T19:08:37+08:00 ] 127.0.0.1 /ping/Admin/System/addHandle.html
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:29:16+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:34:48+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:36:37+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:36:55+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:40:50+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:43:04+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:48:01+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:57:43+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T20:57:52+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:06:42+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:10:28+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:10:54+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:11:13+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:13:34+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:16:08+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:16:14+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:16:27+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:16:32+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:18:57+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:19:02+08:00 ] 127.0.0.1 /ping/Admin/Project/modify/id/6.html
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-04-03T21:30:57+08:00 ] 0.0.0.0 /ping/Home/Ping/index/pid/7.html
+ERR: 模板不存在[./App/Application/Home/Tpl/Ping/defualt.html]
+
+[ 2016-04-03T22:43:06+08:00 ] 127.0.0.1 /ping/Admin/Renke/addRenke.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `teacher_banji` [ RunTime:0.010001s ]
+SQL: DELETE FROM `teacher_banji` WHERE ( `bid` = 49 ) AND ( `termid` = 6 ) [ RunTime:0.063003s ]
+SQL: INSERT INTO `teacher_banji` (`bid`,`tid`,`termid`) VALUES (49,8,6),(49,49,6),(49,64,6) [ RunTime:0.030001s ]
+

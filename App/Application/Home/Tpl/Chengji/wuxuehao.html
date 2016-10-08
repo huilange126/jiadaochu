@@ -1,0 +1,31 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	{:W('BanjiInfo')}
+	<div class="am-panel am-panel-success">
+		<div class="am-panel-hd am-cf">学生列表 <a href="{:U(GROUP_NAME.'/Chengji/daoru',array('id'=>$id))}" class="am-btn am-btn-warning am-margin-left am-btn-xs">返回该考试重新导入成绩</a></div>
+		<table class="am-table am-table-bordered am-table-striped am-table-hover">
+		<thead>
+			<tr>
+				<td colspan="3">
+					<h1 class="am-text-warning">下列学生学号不存在，请检查。</h1>
+				</td>
+			</tr>
+			<tr>
+				<th style="width:5%" class="am-text-center">序号</th>
+				<th style="width:5%" class="am-text-center">学号</th>
+				<th>姓名</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach name="student" item="v">
+			<tr>
+				<td class="am-text-center">{++$num}</td>
+				<td class="am-text-center">{$v['xuehao']}</td>
+				<td>{$v['name']}</td>
+			</tr>
+			</foreach>
+		</tbody>
+		</table>
+	</div>
+</div>
+<include file="Common:footer" />

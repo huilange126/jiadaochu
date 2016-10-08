@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="author" content="大眼仔~旭" />
+    <link href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<title>得分列表</title>
+</head>
+
+<body>
+
+<div class="am-g">
+    <p>
+        <h1 class="am-text-primary am-text-center">评教结果列表</h1>
+    </p>
+</div>
+<hr />
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-6 am-u-md-centered">
+        <table class="am-table am-table-bordered am-table-striped am-table-hover">
+            <tr class="am-text-danger">
+                <td>排序</td>
+                <td>教师名称</td>
+                <td>得分</td>
+            </tr>
+            <foreach name="result" item="v">
+            <tr>
+                <td>{$key+1}</td>
+                <td>{$v['tname']}</td>
+                <td>{$v['defen']}</td>
+            </tr>
+            </foreach>
+            
+        </table>
+    </div>
+</div>
+</body>
+</html>

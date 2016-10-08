@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="大眼仔~旭" />
+    <css file="__PUBLIC__/Admin/Css/public.css" />
+	<title>评价详细结果</title>
+</head>
+
+<body>
+<table class="table">
+    <thead>
+        <tr>
+            <td colspan="3">{$project['term']}::{$project['name']}::{$teacher['name']}</td>
+        </tr>
+        <tr>
+            <th>序号</th>
+            <th>评价项</th>
+            <th>详细情况</th>
+        </tr>
+    </thead>
+    <tbody>
+    <volist name="option" id="v" key="k">
+        <tr>
+            <td width="5%" align="center">{$k}</td>
+            <td width="30%">{$v['name']}</td>
+            <td>
+                <table class="table">
+                    <tbody>
+                    <volist name="result[$v['id']]" id="m">
+                        <tr>
+                            <td width="10%">选项{$i}:</td>
+                            <td width="20%">{$m['ctitle']}</td>
+                            <td>{$m['csum']}</td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </volist>
+    </tbody>
+</table>
+
+
+</body>
+</html>

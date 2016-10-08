@@ -1,0 +1,47 @@
+<include file="Common:header" />
+<div class="am-g am-g-fixed am-margin-top">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd am-cf">
+			{$enrollment['mingcheng']}报名情况查看
+			<a href="{:U(GROUP_NAME.'/Enrollment/bmlist',array('eid'=>$enrollment['id'],'type'=>1))}" class="am-btn am-btn-success am-btn-xs am-margin-left">按照项目查看</a>
+			<a href="{:U(GROUP_NAME.'/Enrollment/bmlist',array('eid'=>$enrollment['id'],'type'=>0))}" class="am-btn am-margin-left am-btn-secondary am-btn-xs ">按照学生查看</a>
+			<a href="{:U(GROUP_NAME.'/Enrollment/bmlist',array('eid'=>$enrollment['id'],'type'=>2))}" class="am-btn am-margin-left am-btn-warning am-btn-xs ">导出学生报名情况</a>
+
+		</div>
+		<div class="am-panel-bd am-cf">
+			<if condition="$type eq 1">
+				<foreach name="enrollment['content']" item="v">
+					<div class="am-panel am-panel-default">
+						<div class="am-panel-hd">{$v['mingcheng']}</div>
+						<div class="am-panel-bd am-cf">
+							<foreach name="v['student']" item="m">
+								<div class="am-u-sm-3 am-u-end">
+									{$m['xuehao']}{$m['name']}
+								</div>
+							</foreach>
+						</div>
+					</div>
+				</foreach>
+			</if>
+			<if condition="$type eq 0">
+				<ul class="am-list am-list-static">
+					<foreach name="student" item="v">
+						<li>
+						<div class="am-g">
+						<div class="am-u-sm-2 am-u-end">
+							{$v['xuehao']}{$v['name']}
+						</div>
+						<div class="am-u-sm-10">
+							<foreach name="v['enrollment']" item="m">
+								<span class="am-text-warning am-padding-left am-padding-right">{$m['mingcheng']}</span>
+							</foreach>		
+						</div>
+						</div>
+						</li>
+					</foreach>
+				</ul>
+			</if>
+		</div>
+	</div>
+</div>
+<include file="Common:footer" />

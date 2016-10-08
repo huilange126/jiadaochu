@@ -1,0 +1,281 @@
+<include file="Common:header" />
+<style>
+	.mytable{
+		border: 1px solid #efefef;
+	}
+</style>
+<div class="am-g am-padding">
+		<div class="am-panel am-panel-default">
+			<div class="am-panel-bd">
+				<a href="__ROOT__/Uploads/{$file['zhixuce']}" class="am-btn am-btn am-btn-primary">导出秩序册</a>
+				<a href="__ROOT__/Uploads/{$file['tiansai']}" class="am-btn am-btn am-btn-primary">导出田赛成绩表</a>
+				<a href="__ROOT__/Uploads/{$file['jingsai']}" class="am-btn am-btn am-btn-primary">导出径赛检录单</a>
+			</div>
+		</div>
+	</div>
+<div class="am-g am-padding">
+	<div class="am-panel am-panel-secondary">
+		<div class="am-panel-hd">运动会报名报表</div>
+		<foreach name="jibu" item="v">
+			<div class="am-panel-bd">
+				{$v['mingcheng']}
+			</div>
+			<foreach name="v['xiangmu']" item="m">
+			<if condition="$m['nannv'] eq 2">
+			<!-- 表示该项目有男女分组 -->
+			<?php
+				//根据性别重组数据
+				$xuesheng = $m['student'];
+				$nvsheng = array();
+				$nansheng = array();
+				foreach($xuesheng as $key=>$value){
+					if($value['xingbie']==0){
+						$nvsheng[] = $value;
+					}else{
+						$nansheng[] = $value;
+					}
+				}
+				//重新排序
+				shuffle($nvsheng);
+				shuffle($nansheng);
+
+			?>
+			<if condition="$m['leixing'] eq 2">
+			<!-- 表示是径赛 -->
+			
+				<table class="am-table am-table-bordered am-table-striped am-table-hover mytable">
+					<thead>
+						<tr>
+							<th colspan="9">{$m['mingcheng']}男子组</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="width: 10%;" class="am-text-center">组/道次</td>
+							<td style="width: 10%;" class="am-text-center">一</td>
+							<td style="width: 10%;" class="am-text-center">二</td>
+							<td style="width: 10%;" class="am-text-center">三</td>
+							<td style="width: 10%;" class="am-text-center">四</td>
+							<td style="width: 10%;" class="am-text-center">五</td>
+							<td style="width: 10%;" class="am-text-center">六</td>
+							<td style="width: 10%;" class="am-text-center">七</td>
+							<td style="width: 10%;" class="am-text-center">八</td>
+						</tr>
+						<?php
+						// 根据学生数量计算有多少行
+						$studentCount = count($nansheng);
+						if($studentCount%8==0){
+							$rowCount = $studentCount/8;
+						}else{
+							$rowCount = floor($studentCount/8)+1;
+						}
+						$yushu = $studentCount%8;
+						//判断最后一组如果大于4且小于8 则空第一道
+						if($yushu>=4&&$yushu<8){
+							$weizhi = ($rowCount-1)*8;
+							array_splice($nansheng, $weizhi,0, array('name'=>''));  
+						}
+						//如果小于4，则拿出上一组进行平均
+						if($yushu<4){
+							$daoshudierzu = ceil((8+$yushu)/2);
+							$zuihouyizu = (8+$yushu)-$daoshudierzu;
+							//插入空值
+							$weizhi = ($rowCount-2)*8;
+							array_splice($nansheng, $weizhi,0, array('name'=>''));
+							//倒数第二组插入空值数量
+							$chazhi = 8-1-$daoshudierzu;
+							for($i=0;$i<$chazhi;$i++){
+								$weizhi = ($rowCount-2)*8+$daoshudierzu+i+1;
+								array_splice($nansheng, $weizhi,0, array('name'=>''));
+							}
+							//最后一行插入空值
+							$weizhi = ($rowCount-1)*8;
+							array_splice($nansheng, $weizhi,0, array('name'=>''));  
+						}
+						for($i=0;$i<$rowCount;$i++){
+						?>
+						<tr>
+							<td class="am-text-center">{$i+1}<?php echo $zuihouyizu ?></td>
+							<?php
+							for($j=0;$j<8;$j++){
+							?>
+								<td class="am-text-center">
+									<?php
+										echo $nansheng[$i*8+$j]['xuehao'];
+										echo '<br>';
+										echo $nansheng[$i*8+$j]['name'];
+									?>
+								</td>
+							<?php
+							}
+							?>
+						</tr>
+						<?php
+						}
+						?>
+					</tbody>
+				</table>
+				<br>
+				<table class="am-table am-table-bordered am-table-striped am-table-hover">
+					<thead>
+						<tr>
+							<th colspan="9">{$m['mingcheng']}女子组</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="width: 10%;" class="am-text-center">组/道次</td>
+							<td style="width: 10%;" class="am-text-center">一</td>
+							<td style="width: 10%;" class="am-text-center">二</td>
+							<td style="width: 10%;" class="am-text-center">三</td>
+							<td style="width: 10%;" class="am-text-center">四</td>
+							<td style="width: 10%;" class="am-text-center">五</td>
+							<td style="width: 10%;" class="am-text-center">六</td>
+							<td style="width: 10%;" class="am-text-center">七</td>
+							<td style="width: 10%;" class="am-text-center">八</td>
+						</tr>
+						<?php
+						// 根据学生数量计算有多少行
+						$studentCount = count($nvsheng);
+						if($studentCount%8==0){
+							$rowCount = $studentCount/8;
+						}else{
+							$rowCount = floor($studentCount/8)+1;
+						}
+						$yushu = $studentCount%8;
+						//判断最后一组如果大于4且小于8 则空第一道
+						if($yushu>=4&&$yushu<8){
+							$weizhi = ($rowCount-1)*8;
+							array_splice($nvsheng, $weizhi,0, array('name'=>''));  
+						}
+						//如果小于4，则拿出上一组进行平均
+						if($yushu<4){
+							$daoshudierzu = ceil((8+$yushu)/2);
+							$zuihouyizu = (8+$yushu)-$daoshudierzu;
+							//插入空值
+							$weizhi = ($rowCount-2)*8;
+							array_splice($nvsheng, $weizhi,0, array('name'=>''));
+							//倒数第二组插入空值数量
+							$chazhi = 8-1-$daoshudierzu;
+							for($i=0;$i<$chazhi;$i++){
+								$weizhi = ($rowCount-2)*8+$daoshudierzu+i+1;
+								array_splice($nvsheng, $weizhi,0, array('name'=>''));
+							}
+							//最后一行插入空值
+							$weizhi = ($rowCount-1)*8;
+							array_splice($nvsheng, $weizhi,0, array('name'=>''));  
+						}
+						for($i=0;$i<$rowCount;$i++){
+						?>
+						<tr>
+							<td class="am-text-center">{$i+1}</td>
+							<?php
+							for($j=0;$j<8;$j++){
+							?>
+								<td class="am-text-center">
+									<?php
+										echo $nvsheng[$i*8+$j]['xuehao'];
+										echo '<br>';
+										echo $nvsheng[$i*8+$j]['name'];
+									?>
+								</td>
+							<?php
+							}
+							?>
+						</tr>
+						<?php
+						}
+						?>
+					</tbody>
+				</table>
+				<br>
+			</if>
+			<if condition="$m['leixing'] eq 1">
+			<!-- 表示是田赛 -->
+			<table class="am-table am-table-bordered am-table-striped am-table-hover">
+					<thead>
+						<tr>
+							<th colspan="9">{$m['mingcheng']}男子组</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+						// 根据学生数量计算有多少行
+						$studentCount = count($nansheng);
+						if($studentCount%8==0){
+							$rowCount = $studentCount/8;
+						}else{
+							$rowCount = floor($studentCount/8)+1;
+						}
+						?>
+						<?php
+						for($i=0;$i<$rowCount;$i++){
+						?>
+						<tr>
+							<?php
+								for($j=0;$j<8;$j++){
+								?>
+								<td style="width: 10%;" class="am-text-center">
+									<?php
+										echo $nansheng[$i*8+$j]['xuehao'];
+										echo '<br>';
+										echo $nansheng[$i*8+$j]['name'];
+									?>
+								</td>
+								<?php
+								}
+							?>
+						</tr>
+						<?php
+						}
+						?>
+					</tbody>
+			</table>
+			<br>
+			<table class="am-table am-table-bordered am-table-striped am-table-hover">
+					<thead>
+						<tr>
+							<th colspan="9">{$m['mingcheng']}女子组</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+						// 根据学生数量计算有多少行
+						$studentCount = count($nvsheng);
+						if($studentCount%8==0){
+							$rowCount = $studentCount/8;
+						}else{
+							$rowCount = floor($studentCount/8)+1;
+						}
+						?>
+						<?php
+						for($i=0;$i<$rowCount;$i++){
+						?>
+						<tr>
+							<?php
+								for($j=0;$j<8;$j++){
+								?>
+								<td style="width: 10%;" class="am-text-center">
+									<?php
+										echo $nvsheng[$i*8+$j]['xuehao'];
+										echo '<br>';
+										echo $nvsheng[$i*8+$j]['name'];
+									?>
+								</td>
+								<?php
+								}
+							?>
+						</tr>
+						<?php
+						}
+						?>
+					</tbody>
+			</table>
+			<br>
+			</if>
+			</if>
+			</foreach>
+		</foreach>
+	</div>
+</div>
+<include file="Common:footer" />

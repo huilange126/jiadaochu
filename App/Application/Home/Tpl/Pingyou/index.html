@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="优秀班集体评价" />
+    <css file="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css" />
+    <load file="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" />
+	<title>{$Think.config.webname}学生评优登录</title>
+</head>
+
+<body>
+<div class="am-g am-g-fixed">
+    <p style="margin-top: 100px;">
+        <h1 class="am-text-primary am-margin am-text-center">{$Think.config.webname}</h1>
+        <h2 class="am-text-warning am-margin am-text-center">{$term['name']}学生评优系统</h2>
+    </p>
+</div>
+<hr />
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-6 am-u-md-centered">
+    <form action="{:U(GROUP_NAME.'/Pingyou/loginHandle')}" method="POST">
+        <div class="am-form">
+            <div class="am-form-group">
+                <label class="am-text-primary am-text-lg">
+                    请输入班级用户名
+                </label>
+                <input type="text" name="username" />
+            </div>
+            <div class="am-form-group">
+                <label class="am-text-primary am-text-lg">
+                    请输入密码
+                </label>
+                <input type="password" name="password" />
+            </div>
+            <button type="submit" id="btn" class="am-btn am-btn-primary am-btn-block">登陆系统</button>
+        </div>
+    </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("#btn").click(function(){
+             if($('input[name=username]').val()==''){
+                alert('身份证号不能为空');
+                return false;
+             }
+             if($('input[name=password]').val()==''){
+                alert('姓名不能为空');
+                return false;
+             }
+             
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+[ 2016-04-05T10:05:34+08:00 ] 172.30.2.168 /ping/Admin/Login/checkusername.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+ERR: 非法操作:checkusername
+
+[ 2016-04-05T10:05:36+08:00 ] 172.30.2.168 /ping/Admin/Login/checkpassword.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+ERR: 非法操作:checkpassword
+
+[ 2016-04-05T10:06:05+08:00 ] 172.30.2.168 /ping/Admin/Renke/addRenke.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `teacher_banji` [ RunTime:0.002125s ]
+SQL: DELETE FROM `teacher_banji` WHERE ( `bid` = 49 ) AND ( `termid` = 6 ) [ RunTime:0.000750s ]
+SQL: INSERT INTO `teacher_banji` (`bid`,`tid`,`termid`) VALUES (49,8,6),(49,49,6),(49,64,6),(49,17,6) [ RunTime:0.000546s ]
+
+[ 2016-04-05T10:09:28+08:00 ] 172.30.2.168 /ping/Admin/Renke/addRenke.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `teacher_banji` [ RunTime:0.002348s ]
+SQL: DELETE FROM `teacher_banji` WHERE ( `bid` = 49 ) AND ( `termid` = 6 ) [ RunTime:0.000873s ]
+SQL: INSERT INTO `teacher_banji` (`bid`,`tid`,`termid`) VALUES (49,8,6),(49,49,6),(49,64,6),(49,17,6),(49,12,6) [ RunTime:0.000646s ]
+
+[ 2016-04-05T10:13:32+08:00 ] 172.30.2.153 /ping/assets/js/amazeui.ie8polyfill.min.js
+ERR: 无法加载模块:assets
+
+[ 2016-04-05T10:13:34+08:00 ] 172.30.2.153 /ping/assets/js/amazeui.ie8polyfill.min.js
+ERR: 无法加载模块:assets
+
+[ 2016-04-05T10:46:29+08:00 ] 172.30.2.168 /ping/Public/amazeui2.6/amazeui.min.js
+ERR: 无法加载模块:Public
+
+[ 2016-04-05T10:46:30+08:00 ] 172.30.2.168 /ping/Public/amazeui2.6/amazeui.min.js
+ERR: 无法加载模块:Public
+
+[ 2016-04-05T10:46:30+08:00 ] 172.30.2.168 /ping/Public/amazeui2.6/amazeui.min.js
+ERR: 无法加载模块:Public
+
+[ 2016-04-05T10:47:50+08:00 ] 172.30.2.168 /ping/Public/amazeui2.6/amazeui.min.js
+ERR: 无法加载模块:Public
+
+[ 2016-04-05T10:48:37+08:00 ] 172.30.2.168 /ping/Public/amazeui2.6/amazeui.min.js
+ERR: 无法加载模块:Public
+
+[ 2016-04-05T10:59:43+08:00 ] 172.30.2.168 /ping/Public/amazeui2.6/amazeui.min.js
+ERR: 无法加载模块:Public
+
+[ 2016-04-05T13:14:15+08:00 ] 172.30.2.168 /ping/Admin/Deyu/index.html
+ERR: Model:getFields您所请求的方法不存在！
+
+[ 2016-04-05T15:48:57+08:00 ] 172.30.2.168 /ping/Admin/Deyu/return%20del();
+ERR: 非法操作:return del();
+
+[ 2016-04-05T17:40:44+08:00 ] 172.30.2.168 /ping/Public/Js/jquery-1.10.2.min.map
+ERR: 无法加载模块:Public
+
