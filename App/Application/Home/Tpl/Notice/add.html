@@ -60,7 +60,7 @@
 				<div class="am-form-group">
 					<label for="doc-ipt-3" class="am-u-md-2 am-form-label">消息内容</label>
 					<div class="am-u-md-8 am-u-end">
-						 <textarea name="content" class="" rows="5" id="mycontent"></textarea>
+						 <textarea name="content" id="mynotice" class="" rows="5"></textarea>
 					</div>
 				</div>
 				<div class="am-form-group">
@@ -83,6 +83,7 @@
 	</div>
 </div>
 <script>
+
 	$(function(){
 		$('#btnadd').click(function(){
 			if($('select[name=xueke]').val()==0){
@@ -97,12 +98,6 @@
 			}
 			if($('input[name=shijian]').val()==''){
 				$('.am-modal-bd').html('<h2 class="am-text-danger">请选择消息时间</h2>');
-				$('#my-alert').modal();
-				return false;
-			}
-			if($('#mycontent').text()==''){
-				alert($('#mycontent').html());
-				$('.am-modal-bd').html('<h2 class="am-text-danger">请添加消息内容</h2>');
 				$('#my-alert').modal();
 				return false;
 			}
